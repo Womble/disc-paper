@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2011.10.18)  17 SEP 2012 16:17
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2011.10.18)  19 SEP 2012 15:09
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -121,32 +121,35 @@ File: Figures/model/rhoT.png Graphic file (type png)
 File: Figures/model/velocity_rzSlice_thetaColourScale2.png Graphic file (type p
 ng)
  <use Figures/model/velocity_rzSlice_thetaColourScale2.png>
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--104
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--113
+Underfull \hbox (badness 10000) in paragraph at lines 103--111
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 115.
+
+LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 113.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 113.
 
 (/usr/share/texmf/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 115.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 113.
  [1{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./Figures/model/L1544model_used.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 115--118
+Underfull \hbox (badness 10000) in paragraph at lines 113--116
 
  []
 
@@ -158,41 +161,58 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: Figures/model/Lime_grid3.png Graphic file (type png)
 
 <use Figures/model/Lime_grid3.png>
+<Figures/model/lime_points_rz.png, id=26, 732.0951pt x 594.0594pt>
+File: Figures/model/lime_points_rz.png Graphic file (type png)
+
+<use Figures/model/lime_points_rz.png>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2 <./Figures/model/rhoT.png> <./Figures/model/velocity_rzSlice_thetaColourSca
-le2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 137--140
+
+
+LaTeX Warning: Reference `lastpage' on page 2 undefined on input line 134.
+
+[2 <./Figures/model/rhoT.png> <./Figures/model/velocity_rzSlice_thetaColourScal
+e2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 138--141
 \OT1/cmr/m/n/9 Figures show-ing the RT re-sults in a few
  []
 
-[3
 
- <./Figures/model/Lime_grid3.png>] (./paper.aux) ) 
+LaTeX Warning: Reference `lastpage' on page 3 undefined on input line 235.
+
+[3 <./Figures/model/Lime_grid3.png> <./Figures/model/lime_points_rz.png>]
+(./paper.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1168 strings out of 256216
- 13525 string characters out of 1917071
+ 1173 strings out of 256216
+ 13690 string characters out of 1917071
  68024 words of memory out of 1500000
- 4463 multiletter control sequences out of 10000+200000
+ 4467 multiletter control sequences out of 10000+200000
  16401 words of font info for 57 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 31i,14n,34p,1012b,288s stack positions out of 5000i,500n,6000p,200000b,15000s
-</usr/share/texmf/fonts/type1
-/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></us
-r/share/texmf/fonts/type1/bluesky/cm/cmbx8.pfb></usr/share/texmf/fonts/type1/bl
-uesky/cm/cmbx9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmex10.pfb></usr/sh
-are/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/blues
-ky/cm/cmmi6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi9.pfb></usr/share/
-texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm
-/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr5.pfb></usr/share/texmf/
-fonts/type1/bluesky/cm/cmr6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr8.p
-fb></usr/share/texmf/fonts/type1/bluesky/cm/cmr9.pfb></usr/share/texmf/fonts/ty
-pe1/bluesky/cm/cmsy6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy8.pfb></u
-sr/share/texmf/fonts/type1/bluesky/cm/cmsy9.pfb></usr/share/texmf/fonts/type1/b
-luesky/cm/cmti12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmti8.pfb>
-Output written on paper.pdf (3 pages, 691453 bytes).
+ 31i,14n,34p,1112b,288s stack positions out of 5000i,500n,6000p,200000b,15000s
+</usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/t
+ype1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx8.pfb><
+/usr/share/texmf/fonts/type1/bluesky/cm/cmbx9.pfb></usr/share/texmf/fonts/type1
+/bluesky/cm/cmex10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></us
+r/share/texmf/fonts/type1/bluesky/cm/cmmi6.pfb></usr/share/texmf/fonts/type1/bl
+uesky/cm/cmmi9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/sha
+re/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky
+/cm/cmr5.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr6.pfb></usr/share/texm
+f/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr9
+.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy6.pfb></usr/share/texmf/fonts
+/type1/bluesky/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy9.pfb>
+</usr/share/texmf/fonts/type1/bluesky/cm/cmti12.pfb></usr/share/texmf/fonts/typ
+e1/bluesky/cm/cmti8.pfb>
+Output written on paper.pdf (3 pages, 753192 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
+ 98 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
