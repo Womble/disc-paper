@@ -42,12 +42,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \title[Disc stuff]{Disc stuff}
-\author[Tom  Douglas, Paola Caselli]{Tom Douglas$^{1}$\thanks{E-mail:
+\author[Tom  Douglas, Paola Caselli, Et al.]{Tom Douglas$^{1}$\thanks{E-mail:
 pytd@leeds.ac.uk}, Paola Caselli$^{1}$\\
 $^{1}$School of Physics and Astronomy, University of Leeds, Leeds LS2 9JT, UK}
 \begin{document}
 
-\date{Accepted 1988 December 15. Received 1988 December 14; in original form 1988 October 11}
+\date{In original form 2012}
 
 \pagerange{\pageref{firstpage}--\pageref{lastpage}} \pubyear{2002}
 
@@ -65,20 +65,19 @@ circumstellar matter -- infrared: stars.
 
 \section{Introduction}
 
-1. description of what has been done so far on the modeling and radiative transfer of disks (this includes also more evolved disks -- Visser et al., Walsh et al., Aikawa et al. ..)
+1. description of what has been done so far on the modelling and radiative transfer of disks (this includes also more evolved disks -- Visser et al., Walsh et al., Aikawa et al. ..)
 2. focus on the young disks (work done by Machida et al., Dapp, Basu \& Kunz 2012, .. for their formation; work by Boley et al. on the physical evolution ; Ilee et al. for chemistry) 
 3. previous attempts to observe these young disks: (a) simulations (Cossins et al. 2010); (b) observations: Fuente et al. 2010 (AB Aur); Jorgensen \& van Dishoeck (H$_2^{18}$O and the HDO/H2O ratio); Pineda et al. (2012); other papers talking about "hot corinos" (Bottinelli et al. ....)
 
 \section{Description of the Model}
 
 -describe the envelope structure (pre-stellar core)
-Keto \& Caselli model (2010), disc is embedded in an infalling pre-stellar core, with densities temperatures and velocities given by the model of the collapse of a 10 solar mass Bonnor-Ebert sphere and providing similar line profiles to the pre-stellar core L1544 as described by Keto \& Caselli (2010), truncated at 80$\,$au and extending out to 10,000$\,$au. The model is 1D spherically symetric model with inward motions (see figure).
-For the models using a smoothed disc the same physical and chemical model is used but with the temperature, density and abundance averaged in $\phi$.
+Keto \& Caselli model (2010), disc is embedded in an infalling pre-stellar core, with densities temperatures and velocities given by the model of the collapse of a 10 solar mass Bonnor-Ebert sphere and providing similar line profiles to the pre-stellar core L1544 as described by Keto \& Caselli (2010), with some slight modification due to the addition of Oxygen lines (keto et al 2012 in prep). This prestellar core model extends from 80$\,$au out to 10,000$\,$au. The model is 1D spherically symmetric model with inward motions (see figure).
 
 \begin{figure}
  \includegraphics[width=84mm]{Figures/model/L1544model_used.png}
 
- \caption{enevlope model with temp and dust temp (red, green) in kelvin, log number density (blue) in cm$^{-3}$ and inward velocity$\times$100 (cyan) in m$\,$s$^{-1}$}
+ \caption{envelope model with temp and dust temp (red, green) in kelvin, log number density (blue) in cm$^{-3}$ and inward velocity$\times$100 (cyan) in m$\,$s$^{-1}$}
 \end{figure}
 
 \begin{figure*}
@@ -95,10 +94,10 @@ For the models using a smoothed disc the same physical and chemical model is use
 
 
 -describe the physical structure of the disk (density and temperature) -- one figure showing the physical structure and the kinematics (2-panels figure)
-The physical strucure of the disc is the same as the one used in Ilee et al. (2011), based on the work of Boley(2007), Boley \& Durisen(2008) and Boley(2009). This model describes a 0.39$\,rm{M}_\odot$ self-gravitating disc featuring prominent spiral arms. Densities in the disc range from 10$^{10}$-10$^{21}\,\rm{m}^{-3}$, and temperatures range from 30-400 K. The dust and gas temperatures in the disc are assumed to be equal. The gas/dust mass ratio was assumed to be 1/100 throughout the model and the opacities were given by the model of dust grains with thick icy mantles and 10$^6\,$yr coagulation from Ossenkopf and Henning (1994). The model is sampled over a regular grid of size 256$\times$256$\times$64 with spatial resolution of 0.5$\,$au in x, y and z. The majority of the mass lies in the midplane of the disc.\newline
+The physical structure of the disc is the same as the one used in Ilee et al. (2011), based on the work of Boley(2007), Boley \& Durisen(2008) and Boley(2009). This model describes a 0.39$\,\rm{M}_\odot$ self-gravitating disc featuring prominent spiral arms. Densities in the disc range from 10$^{10}$-10$^{21}\,\rm{m}^{-3}$, and temperatures range from 30-400 K. The dust and gas temperatures in the disc are assumed to be equal. The gas/dust mass ratio was assumed to be 1/100 throughout the model and the opacities were given by the model of dust grains with thick icy mantles and 10$^6\,$yr coagulation from Ossenkopf and Henning (1994). The model is sampled over a regular grid of size 256$\times$256$\times$64 with spatial resolution of 0.5$\,$au in x, y and z. The majority of the mass lies in the mid-plane of the disc. For the models using a smoothed disc the same physical and chemical model is used but with the temperature, density and abundance averaged in $\phi$.\newline
 
--describe the chemistry  - refer to Ilee et al. which have been taken as input to the rad transf (RT) code
-Chemical abundances in the disc were taken from Ilee et. al (2011) which followed the changes of chemical abundances of trace particles moving through the disc as it evolved. The abundances of 125 speices related by 1334 reactions were followed through the time evoltion of the disc. These abundances were interpolated onto a 51$^3$ grid covering the disc with cells of size 2.2$\times$2.2$\times$0.22$\,$au. Abundances in the envelope model were as follows:\newline
+-describe the chemistry  - refer to Ilee et al. which have been taken as input to the rad transfer (RT) code
+Chemical abundances in the disc were taken from Ilee et. al (2011) which followed the changes of chemical abundances of trace particles moving through the disc as it evolved. The abundances of 125 species related by 1334 reactions were followed through the time evolution of the disc. These abundances were interpolated onto a 51$^3$ grid covering the disc with cells of size 2.2$\times$2.2$\times$0.22$\,$au. Abundances in the envelope model were as follows:\newline
 
 (tableify this?)\newline
 HCO$^+$: as the H2O profile from (find out where L1544 H2O profile is from) scaled so that the maximum abundance is 10$^{-8}$\newline
@@ -111,13 +110,13 @@ CO: as the H2O profile from ??? scaled so that the maximum abundance is CO maxim
 
 
 -describe the RT used (LIME) 
-LIME (Brinch 2011), the radiative transfer program used, calculates line intensities based on a weighted sample of randomly chosen points in a continous 3d model. The method of selecting these points is given in the gridding section. At each of these points the density of the main collision partner (in this case H$_2$), gas and dust temperatures, velocity, molecular abundances and turbulent velocity and taken from the model. These points are then smoothed by Lloyds algorithm (Lloyd 1982) in order to minimise the vairiation in distance between points whilst keeping the same underlying distribution. These points are then connected by Delaunay triangulation and it is down these paths that photons are restricted to propagating. The levels of molecules in question are then  calculated at each of these points from collional and radiative (de)excitation and the local radiation field is calculated. This is repeated 20 times with the populations of each level converging towards a single value. \newline
+LIME (Brinch 2011), the radiative transfer program used, calculates line intensities based on a weighted sample of randomly chosen points in a continuous 3d model. The method of selecting these points is given in the griding section. At each of these points the density of the main collision partner (in this case H$_2$), gas and dust temperatures, velocity, molecular abundances and turbulent velocity and taken from the model. These points are then smoothed by Lloyds algorithm (Lloyd 1982) in order to minimise the variation in distance between points whilst keeping the same underlying distribution. These points are then connected by Delaunay triangulation and it is down these paths that photons are restricted to propagating. The levels of molecules in question are then  calculated at each of these points from collisional and radiative (de)excitation and the local radiation field is calculated. This is repeated 20 times with the populations of each level converging towards a single value. \newline
 
 
 \begin{figure}
  \includegraphics[width=84mm]{Figures/model/Lime_grid3.png}
 
- \caption{plot of the gridding overlaided on a smoothed density model}
+ \caption{plot of the griding overlaid on a smoothed density model}
 \end{figure}
 
 \begin{figure}
@@ -126,12 +125,12 @@ LIME (Brinch 2011), the radiative transfer program used, calculates line intensi
  \caption{plot of the points selected in the model}
 \end{figure}
 
-In order to construct the grid, points are randomly selected from the volume being simulated then compaired against a reference point. Grid points are selected at random in cylindrical co-ordinates, linearly spaced in z and $\phi$ and logarithmicly spaced in r. For each point to be selected a random number $\alpha$ is drawn from the semi-open set [0,$\,$1) as a threshold. After selection of random co-ordinates the Hydrogen density and molecular density at the point (n and m) are compaired against the densities of a reference point on the inner edge of the disc (n$_0$ and m$_0$). If $\alpha<\left( \frac{n}{n_0} \right)^{0.3}$ or $\alpha< \left( \frac{m}{m_0} \right)^{0.3}$ then the point is selected for use, if not then another r,$\phi$,z co-ordinte is selected. The weighting function and gridding functions were selected empiricly to sample both the all scales while ensuring the majority of the points went into the inner disc which is the region of interest. 20\% of these points are forced to be at radii greater than $\sqrt{R_{min}R_{max}}$ (where $R_{min}$ and $R_{max}$ are the inner and outer radius of the model) in order to stop too many of the selecected points clustering in the high density disc and leaving the envelope undersampled. In addiation to this method of selection 5\% of the points are linearly distributed in x, y and z with no bias with regards to density or abundance. This provides a minimum level of sampling for the large low density regions in the outer parts of the simulated volume. See figure 5 for example of the points distribution in r, z.
+In order to construct the grid, points are randomly selected from the volume being simulated then compared against a reference point. Grid points are selected at random in cylindrical co-ordinates, linearly spaced in z and $\phi$ and logarithmically spaced in r. For each point to be selected a random number $\alpha$ is drawn from the semi-open set [0,$\,$1) as a threshold. After selection of random co-ordinates the Hydrogen density and molecular density at the point (n and m) are compared against the densities of a reference point on the inner edge of the disc (n$_0$ and m$_0$). If $\alpha<\left( \frac{n}{n_0} \right)^{0.3}$ or $\alpha< \left( \frac{m}{m_0} \right)^{0.3}$ then the point is selected for use, if not then another r,$\phi$,z co-ordinate is selected. The weighting function and griding functions were selected empirically to sample both the all scales while ensuring the majority of the points went into the inner disc which is the region of interest. 20\% of these points are forced to be at radii greater than $\sqrt{R_{min}R_{max}}$ (where $R_{min}$ and $R_{max}$ are the inner and outer radius of the model) in order to stop too many of the selecected points clustering in the high density disc and leaving the envelope undersampled. In addiation to this method of selection 5\% of the points are linearly distributed in x, y and z with no bias with regards to density or abundance. This provides a minimum level of sampling for the large low density regions in the outer parts of the simulated volume. See figure 5 for example of the points distribution in r, z.
 
 
 \section{Model Results}
 
-Figures showing the RT results in a few molecules/transitions (CO, HCO$^+$, HCN, OCS, H2CO, NH3 --- maybe H2O,H2$^{18}$O [to try first]) (Note the moment 1 and 0 map were created by integrating between -12.5 to -0.5 km$\,$s$^{-1}$ and +0.5 to +12.5 km$\,$s$^{-1}$ to avoid being dominated by the contribution from the envelope, this can be seen in the some PV diagrams as the strong absorption feature at all positions around zero velocity, mom1maps are shown with a cutoff of 1/1000 of the peak emission/apsorption value)
+Figures showing the RT results in a few molecules/transitions (CO, HCO$^+$, HCN, OCS, H2CO, NH3 --- maybe H2O,H2$^{18}$O [to try first]) (Note the moment 1 and 0 map were created by integrating between -12.5 to -0.5 km$\,$s$^{-1}$ and +0.5 to +12.5 km$\,$s$^{-1}$ to avoid being dominated by the contribution from the envelope, this can be seen in the some PV diagrams as the strong absorption feature at all positions around zero velocity, mom1maps are shown with a cutoff of 1/1000 of the peak emission/absorption value)\newline
 
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imageCO_3-2_30deg_contSub.png}
@@ -151,7 +150,7 @@ Figures showing the RT results in a few molecules/transitions (CO, HCO$^+$, HCN,
  \caption{CO 3-2 PV through centre}
 \end{figure}
 
-These syntetic images of the CO 3-2 line at 345.8$\,$GHz. As the upper level for this line is at 33$\,$K above the ground state this transition should be excited through out disc. CO line will be thick so this is only mapping the outer regions of the disc. Spiral structure can be seen 
+These synthetic images of the CO 3-2 line at 345.8$\,$GHz. As the upper level for this line is at 33$\,$K above the ground state this transition should be excited through out disc. CO line will be thick so this is only mapping the outer regions of the disc. Spiral structure can be seen.\newline
 
 
 
@@ -162,18 +161,12 @@ These syntetic images of the CO 3-2 line at 345.8$\,$GHz. As the upper level for
 \end{figure}
 
 \begin{figure}
- \includegraphics[width=84mm]{Figures/sim/imageOCS_28-27_30deg_mom1.png}
-
- \caption{OCS 28-27 mom1map}
-\end{figure}
-
-\begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imageOCS_28-27_30deg_PV_centre.png}
 
  \caption{OCS 28-27 PV through centre}
 \end{figure}
 
-The OCS lines in alma band 7 (22-21 through 30-29) with upper energy levels between 161 and 271 K above the ground state provide a way to trace hot shocked gas in spiral arms without resolving structure.
+The OCS lines in alma band 7 (22-21 through 30-29) with upper energy levels between 161 and 271 K above the ground state provide a way to trace hot shocked gas in spiral arms without resolving structure.\newline
 
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imagesmoothedOCS_28-27_30deg_contSub.png}
@@ -181,21 +174,15 @@ The OCS lines in alma band 7 (22-21 through 30-29) with upper energy levels betw
  \caption{SmoothedOCS 28-27 Continuum subtracted mom0}
 \end{figure}
 
-\begin{figure}
- \includegraphics[width=84mm]{Figures/sim/imagesmoothedOCS_28-27_30deg_mom1.png}
 
- \caption{SmoothedOCS 28-27 mom1map}
-\end{figure}
-
+ 
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imagesmoothedOCS_28-27_30deg_PV_centre.png}
 
-In comparison to the model with spiral arms the absorbtion and emission from this smoothed model is far weaker.
-
-gdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfd gfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdf gfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsg fsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfds
-
  \caption{SmoothedOCS 28-27 PV through centre}
 \end{figure}
+
+In comparison to the model with spiral arms the absorbtion and emission from this smoothed model is far weaker.\newline
 
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imageH2CO_4-0-4->3-0-3_30deg_contSub.png}
@@ -206,7 +193,7 @@ gdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfd gfdsgdfsgfds
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imageH2CO_4-0-4->3-0-3_30deg_mom1.png}
 
- \caption{H$_2$CO 4$\,$0$\,$4 - 3$\,$0$\,$3 mom1map}
+ \caption{H$_2$CO 4$\,$0$\,$4 - 3$\,$0$\,$3 PV through centre}
 \end{figure}
 
 \begin{figure}
@@ -215,6 +202,9 @@ gdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfd gfdsgdfsgfds
  \caption{H$_2$CO 4$\,$0$\,$4 - 3$\,$0$\,$3 PV through centre}
 \end{figure}
 
+line ratios of many lined spieces can help us calculate temperatures of the emitting regions.
+
+(figure of temperature as a function of line ratio for 2 sets of formaldehyde lines and map of derived temperature, talk to P about this)\newline
 
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imageHCOp_1-0_30deg_contSub.png}
@@ -234,10 +224,10 @@ gdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfd gfdsgdfsgfds
  \caption{HCO$^+$ 1-0 PV through centre}
 \end{figure}
 
-gdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsg fsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfd gdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgf sgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfd gdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfdsgdfsgfdsgfds
+some molecules such as HCO$^+$ trace only the inner disc (ref ilee 2011) and so can be used to look at the extended velocity and physical structure.\newline
 
-Figure showing different inclinations  
 
+Figures showing different inclinations  
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imageC18O_3-2_15deg_contSub.png}
 
@@ -256,13 +246,15 @@ Figure showing different inclinations
  \caption{C18O 3-2 PV 15 deg through centre}
 \end{figure}
 
-15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 15 deg 
 
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imageC18O_3-2_30deg_contSub.png}
 
  \caption{C18O 3-2  30 deg Continuum subtracted mom0}
 \end{figure}
+
+fdagfdabfdsbfdbds fdbfd  fdfbfvdfd g rbfd fdbfdbc \newline fdagfdabfdsbfdbds fdbfd  fdfbfvdfd g rbfd fdbfdbc \newline fdagfdabfdsbfdbds fdbfd  fdfbfvdfd g rbfd fdbfdbc \newline fdagfdabfdsbfdbds fdbfd  fdfbfvdfd g rbfd fdbfdbc \newline fdagfdabfdsbfdbds fdbfd  fdfbfvdfd g rbfd fdbfdbc \newline fdagfdabfdsbfdbds fdbfd  fdfbfvdfd g rbfd fdbfdbc \newline
+
 
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imageC18O_3-2_30deg_mom1.png}
@@ -275,8 +267,6 @@ Figure showing different inclinations
 
  \caption{C18O 3-2 30 deg PV through centre}
 \end{figure}
-
-30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 30 deg 
 
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imageC18O_3-2_45deg_contSub.png}
@@ -296,7 +286,7 @@ Figure showing different inclinations
  \caption{C18O 3-2 45 deg PV through centre}
 \end{figure}
 
-45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 45 deg 
+nfsdankjdsankj vdjsk nvjdks nvkds jkkd jkvd jkvf djk fj\newline nfsdankjdsankj vdjsk nvjdks nvkds jkkd jkvd jkvf djk fj\newline nfsdankjdsankj vdjsk nvjdks nvkds jkkd jkvd jkvf djk fj\newline nfsdankjdsankj vdjsk nvjdks nvkds jkkd jkvd jkvf djk fj\newline nfsdankjdsankj vdjsk nvjdks nvkds jkkd jkvd jkvf djk fj\newline nfsdankjdsankj vdjsk nvjdks nvkds jkkd jkvd jkvf djk fj\newline nfsdankjdsankj vdjsk nvjdks nvkds jkkd jkvd jkvf djk fj\newline 
 
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imageC18O_3-2_60deg_contSub.png}
@@ -316,8 +306,6 @@ Figure showing different inclinations
  \caption{C18O 3-2 60 deg PV through centre}
 \end{figure}
 
-60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 60 deg 
-
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imageC18O_3-2_75deg_contSub.png}
 
@@ -336,10 +324,8 @@ Figure showing different inclinations
  \caption{C18O 3-2 75 deg PV through centre}
 \end{figure}
 
-75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 75 deg 
 
-
-Figure showing different transitions of the same molecule (e.g. CO(1-0), ...(7-6) , OCS,  H2CO ) for same inclination but in different disks (Boley et al. and the smooth disk)
+Figure showing different transitions of the same molecule (e.g. CO(1-0), ...(7-6) , OCS,  H2CO ) for same inclination but in different disks (Boley et al. and the smooth disk)\newline
 
 \section{ALMA Predictions}
 
@@ -350,12 +336,12 @@ OCS + C18O + H2CO + HNO/CS/
 
 \section{Conclusions}
 
-note that all speices show up in absorption and some show a little bit of emission around the edges of the disc
+note that all species show up in absorption and some show a little bit of emission around the edges of the disc
 OCS is good for showing up spiral structure without being able to resolve it.
-enevelope only contaminates the central plusminus 500 m/s or so
+envelope only contaminates the central plus-minus 500 m/s or so
 
 
-\section*{Acknowledgments}
+\section*{Acknowledgements}
 
 I thank Professor N. Kameswara Rao for some helpful suggestions,
 Dr H. C. Bhatt for a critical reading of the original version of the
