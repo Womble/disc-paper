@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.5.6)  10 OCT 2012 12:53
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.5.6)  27 SEP 2012 10:58
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -120,10 +120,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: Figures/model/L1544model_used.png Graphic file (type png)
 
 <use Figures/model/L1544model_used.png>
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
-[][]
- []
-
 <Figures/model/rhoT.png, id=3, 1236.62pt x 323.2075pt>
 File: Figures/model/rhoT.png Graphic file (type png)
 
@@ -133,32 +129,37 @@ File: Figures/model/rhoT.png Graphic file (type png)
 File: Figures/model/velocity_rzSlice_thetaColourScale2.png Graphic file (type p
 ng)
  <use Figures/model/velocity_rzSlice_thetaColourScale2.png>
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--107
+Underfull \hbox (badness 10000) in paragraph at lines 103--111
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 107.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 111.
 
 (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 107.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 111.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./Figures/model/L1544model_used.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+Underfull \hbox (badness 1168) in paragraph at lines 113--115
+\OT1/cmr/m/n/9 and dust tem-per-a-tures, ve-loc-ity, molec-u-lar abun-dances
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
 
  []
 
@@ -166,273 +167,253 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--110
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+<Figures/model/Lime_grid3.png, id=26, 501.875pt x 305.14pt>
+File: Figures/model/Lime_grid3.png Graphic file (type png)
+
+<use Figures/model/Lime_grid3.png>
+<Figures/model/lime_points_rz2.png, id=27, 532.6299pt x 409.7709pt>
+File: Figures/model/lime_points_rz2.png Graphic file (type png)
+
+<use Figures/model/lime_points_rz2.png>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2 <./Figures/model/rhoT.png> <./Figures/model/velocity_rzSlice_thetaColourSca
 le2.png>]
-<Figures/model/Lime_grid3.png, id=32, 501.875pt x 305.14pt>
-File: Figures/model/Lime_grid3.png Graphic file (type png)
-
-<use Figures/model/Lime_grid3.png>
-Underfull \hbox (badness 10000) in paragraph at lines 113--115
-[][]
- []
-
-<Figures/model/lime_points_rz2.png, id=33, 532.6299pt x 409.7709pt>
-File: Figures/model/lime_points_rz2.png Graphic file (type png)
-
-<use Figures/model/lime_points_rz2.png>
-Underfull \hbox (badness 10000) in paragraph at lines 119--121
-[][]
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+\OT1/cmr/m/n/9 Figures show-ing the RT re-sults in a few
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
-<Figures/sim/continuum.png, id=34, 489.9906pt x 397.485pt>
-File: Figures/sim/continuum.png Graphic file (type png)
 
-<use Figures/sim/continuum.png>
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
-[]\OT1/cmr/m/n/9 Figures show-ing the RT re-sults in a few
- []
+Underfull \vbox (badness 2393) has occurred while \output is active []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
-
- []
-
-<Figures/sim/imageCO_3-2_30deg_contSub.png, id=35, 578.16pt x 433.62pt>
+<Figures/sim/imageCO_3-2_30deg_contSub.png, id=34, 578.16pt x 433.62pt>
 File: Figures/sim/imageCO_3-2_30deg_contSub.png Graphic file (type png)
 
 <use Figures/sim/imageCO_3-2_30deg_contSub.png>
-<Figures/sim/imageCO_3-2_30deg_mom1.png, id=36, 578.16pt x 433.62pt>
+<Figures/sim/imageCO_3-2_30deg_mom1.png, id=35, 578.16pt x 433.62pt>
 File: Figures/sim/imageCO_3-2_30deg_mom1.png Graphic file (type png)
 
 <use Figures/sim/imageCO_3-2_30deg_mom1.png>
-<Figures/sim/imageCO_3-2_30deg_PV_centre.png, id=37, 578.16pt x 433.62pt>
+<Figures/sim/imageCO_3-2_30deg_PV_centre.png, id=36, 578.16pt x 433.62pt>
 File: Figures/sim/imageCO_3-2_30deg_PV_centre.png Graphic file (type png)
 
 <use Figures/sim/imageCO_3-2_30deg_PV_centre.png>
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
-[3 <./Figures/model/Lime_grid3.png> <./Figures/model/lime_points_rz2.png> <./Fi
-gures/sim/continuum.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-<Figures/sim/imageOCS_28-27_30deg_contSub.png, id=47, 578.16pt x 433.62pt>
+<Figures/sim/imageOCS_28-27_30deg_contSub.png, id=37, 578.16pt x 433.62pt>
 File: Figures/sim/imageOCS_28-27_30deg_contSub.png Graphic file (type png)
 
 <use Figures/sim/imageOCS_28-27_30deg_contSub.png>
-<Figures/sim/imageOCS_28-27_30deg_PV_centre.png, id=48, 578.16pt x 433.62pt>
+<Figures/sim/imageOCS_28-27_30deg_PV_centre.png, id=38, 578.16pt x 433.62pt>
 File: Figures/sim/imageOCS_28-27_30deg_PV_centre.png Graphic file (type png)
 
 <use Figures/sim/imageOCS_28-27_30deg_PV_centre.png>
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
 
-<Figures/sim/imagesmoothedOCS_28-27_30deg_contSub.png, id=49, 578.16pt x 433.62
+<Figures/sim/imagesmoothedOCS_28-27_30deg_contSub.png, id=39, 578.16pt x 433.62
 pt>
 File: Figures/sim/imagesmoothedOCS_28-27_30deg_contSub.png Graphic file (type p
 ng)
- <use Figures/sim/imagesmoothedOCS_28-27_30deg_contSub.png>
-<Figures/sim/imagesmoothedOCS_28-27_30deg_PV_centre.png, id=50, 578.16pt x 433.
+ <use Figures/sim/imagesmoothedOCS_28-27_30deg_contSub.png> [3 <./Figures/model
+/Lime_grid3.png> <./Figures/model/lime_points_rz2.png> <./Figures/sim/imageCO_3
+-2_30deg_contSub.png> <./Figures/sim/imageCO_3-2_30deg_mom1.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<Figures/sim/imagesmoothedOCS_28-27_30deg_PV_centre.png, id=49, 578.16pt x 433.
 62pt>
 File: Figures/sim/imagesmoothedOCS_28-27_30deg_PV_centre.png Graphic file (type
  png)
  <use Figures/sim/imagesmoothedOCS_28-27_30deg_PV_centre.png>
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
 
-<Figures/sim/imageH2CO_4-0-4->3-0-3_30deg_contSub.png, id=51, 578.16pt x 433.62
+<Figures/sim/imageH2CO_4-0-4->3-0-3_30deg_contSub.png, id=50, 578.16pt x 433.62
 pt>
 File: Figures/sim/imageH2CO_4-0-4->3-0-3_30deg_contSub.png Graphic file (type p
 ng)
  <use Figures/sim/imageH2CO_4-0-4->3-0-3_30deg_contSub.png>
-<Figures/sim/imageH2CO_4-0-4->3-0-3_30deg_mom1.png, id=52, 578.16pt x 433.62pt>
+<Figures/sim/imageH2CO_4-0-4->3-0-3_30deg_mom1.png, id=51, 578.16pt x 433.62pt>
 File: Figures/sim/imageH2CO_4-0-4->3-0-3_30deg_mom1.png Graphic file (type png)
 
 <use Figures/sim/imageH2CO_4-0-4->3-0-3_30deg_mom1.png>
-<Figures/sim/imageH2CO_4-0-4->3-0-3_30deg_PV_centre.png, id=53, 578.16pt x 433.
+<Figures/sim/imageH2CO_4-0-4->3-0-3_30deg_PV_centre.png, id=52, 578.16pt x 433.
 62pt>
 File: Figures/sim/imageH2CO_4-0-4->3-0-3_30deg_PV_centre.png Graphic file (type
  png)
  <use Figures/sim/imageH2CO_4-0-4->3-0-3_30deg_PV_centre.png>
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
-<Figures/sim/imageHCOp_1-0_30deg_contSub.png, id=54, 578.16pt x 433.62pt>
+<Figures/sim/imageHCOp_1-0_30deg_contSub.png, id=53, 578.16pt x 433.62pt>
 File: Figures/sim/imageHCOp_1-0_30deg_contSub.png Graphic file (type png)
 
 <use Figures/sim/imageHCOp_1-0_30deg_contSub.png>
-<Figures/sim/imageHCOp_1-0_30deg_mom1.png, id=55, 578.16pt x 433.62pt>
+<Figures/sim/imageHCOp_1-0_30deg_mom1.png, id=54, 578.16pt x 433.62pt>
 File: Figures/sim/imageHCOp_1-0_30deg_mom1.png Graphic file (type png)
 
 <use Figures/sim/imageHCOp_1-0_30deg_mom1.png>
-<Figures/sim/imageHCOp_1-0_30deg_PV_centre.png, id=56, 578.16pt x 433.62pt>
+<Figures/sim/imageHCOp_1-0_30deg_PV_centre.png, id=55, 578.16pt x 433.62pt>
 File: Figures/sim/imageHCOp_1-0_30deg_PV_centre.png Graphic file (type png)
 
 <use Figures/sim/imageHCOp_1-0_30deg_PV_centre.png>
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
-<Figures/sim/imageC18O_3-2_15deg_contSub.png, id=57, 578.16pt x 433.62pt>
+<Figures/sim/imageC18O_3-2_15deg_contSub.png, id=56, 578.16pt x 433.62pt>
 File: Figures/sim/imageC18O_3-2_15deg_contSub.png Graphic file (type png)
 
-<use Figures/sim/imageC18O_3-2_15deg_contSub.png> [4 <./Figures/sim/imageCO_3-2
-_30deg_contSub.png> <./Figures/sim/imageCO_3-2_30deg_mom1.png> <./Figures/sim/i
-mageCO_3-2_30deg_PV_centre.png> <./Figures/sim/imageOCS_28-27_30deg_contSub.png
-> <./Figures/sim/imageOCS_28-27_30deg_PV_centre.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5 <./Figures/sim/imagesmoothedOCS_28-27_30deg_contSub.png> <./Figures/sim/ima
-gesmoothedOCS_28-27_30deg_PV_centre.png> <./Figures/sim/imageH2CO_4-0-4->3-0-3_
-30deg_contSub.png> <./Figures/sim/imageH2CO_4-0-4->3-0-3_30deg_mom1.png> <./Fig
-ures/sim/imageH2CO_4-0-4->3-0-3_30deg_PV_centre.png> <./Figures/sim/imageHCOp_1
--0_30deg_contSub.png>]
-<Figures/sim/imageC18O_3-2_15deg_mom1.png, id=75, 578.16pt x 433.62pt>
+<use Figures/sim/imageC18O_3-2_15deg_contSub.png>
+<Figures/sim/imageC18O_3-2_15deg_mom1.png, id=57, 578.16pt x 433.62pt>
 File: Figures/sim/imageC18O_3-2_15deg_mom1.png Graphic file (type png)
 
 <use Figures/sim/imageC18O_3-2_15deg_mom1.png>
-<Figures/sim/imageC18O_3-2_15deg_PV_centre.png, id=76, 578.16pt x 433.62pt>
+<Figures/sim/imageC18O_3-2_15deg_PV_centre.png, id=58, 578.16pt x 433.62pt>
 File: Figures/sim/imageC18O_3-2_15deg_PV_centre.png Graphic file (type png)
 
 <use Figures/sim/imageC18O_3-2_15deg_PV_centre.png>
-<Figures/sim/imageC18O_3-2_30deg_contSub.png, id=77, 578.16pt x 433.62pt>
+<Figures/sim/imageC18O_3-2_30deg_contSub.png, id=59, 578.16pt x 433.62pt>
 File: Figures/sim/imageC18O_3-2_30deg_contSub.png Graphic file (type png)
 
 <use Figures/sim/imageC18O_3-2_30deg_contSub.png>
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
-<Figures/sim/imageC18O_3-2_30deg_mom1.png, id=78, 578.16pt x 433.62pt>
+<Figures/sim/imageC18O_3-2_30deg_mom1.png, id=60, 578.16pt x 433.62pt>
 File: Figures/sim/imageC18O_3-2_30deg_mom1.png Graphic file (type png)
 
-<use Figures/sim/imageC18O_3-2_30deg_mom1.png>
-<Figures/sim/imageC18O_3-2_30deg_PV_centre.png, id=79, 578.16pt x 433.62pt>
+<use Figures/sim/imageC18O_3-2_30deg_mom1.png> [4 <./Figures/sim/imageCO_3-2_30
+deg_PV_centre.png> <./Figures/sim/imageOCS_28-27_30deg_contSub.png> <./Figures/
+sim/imageOCS_28-27_30deg_PV_centre.png> <./Figures/sim/imagesmoothedOCS_28-27_3
+0deg_contSub.png> <./Figures/sim/imagesmoothedOCS_28-27_30deg_PV_centre.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./Figures/sim/imageH2CO_4-0-4->3-0-3_30deg_contSub.png> <./Figures/sim/ima
+geH2CO_4-0-4->3-0-3_30deg_mom1.png> <./Figures/sim/imageH2CO_4-0-4->3-0-3_30deg
+_PV_centre.png> <./Figures/sim/imageHCOp_1-0_30deg_contSub.png> <./Figures/sim/
+imageHCOp_1-0_30deg_mom1.png> <./Figures/sim/imageHCOp_1-0_30deg_PV_centre.png>
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<Figures/sim/imageC18O_3-2_30deg_PV_centre.png, id=78, 578.16pt x 433.62pt>
 File: Figures/sim/imageC18O_3-2_30deg_PV_centre.png Graphic file (type png)
 
 <use Figures/sim/imageC18O_3-2_30deg_PV_centre.png>
-<Figures/sim/imageC18O_3-2_45deg_contSub.png, id=80, 578.16pt x 433.62pt>
+<Figures/sim/imageC18O_3-2_45deg_contSub.png, id=79, 578.16pt x 433.62pt>
 File: Figures/sim/imageC18O_3-2_45deg_contSub.png Graphic file (type png)
 
 <use Figures/sim/imageC18O_3-2_45deg_contSub.png>
-<Figures/sim/imageC18O_3-2_45deg_mom1.png, id=81, 578.16pt x 433.62pt>
+<Figures/sim/imageC18O_3-2_45deg_mom1.png, id=80, 578.16pt x 433.62pt>
 File: Figures/sim/imageC18O_3-2_45deg_mom1.png Graphic file (type png)
 
 <use Figures/sim/imageC18O_3-2_45deg_mom1.png>
-<Figures/sim/imageC18O_3-2_45deg_PV_centre.png, id=82, 578.16pt x 433.62pt>
+<Figures/sim/imageC18O_3-2_45deg_PV_centre.png, id=81, 578.16pt x 433.62pt>
 File: Figures/sim/imageC18O_3-2_45deg_PV_centre.png Graphic file (type png)
 
 <use Figures/sim/imageC18O_3-2_45deg_PV_centre.png>
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
 
  []
 
-<Figures/sim/imageC18O_3-2_60deg_contSub.png, id=83, 578.16pt x 433.62pt>
+<Figures/sim/imageC18O_3-2_60deg_contSub.png, id=82, 578.16pt x 433.62pt>
 File: Figures/sim/imageC18O_3-2_60deg_contSub.png Graphic file (type png)
 
 <use Figures/sim/imageC18O_3-2_60deg_contSub.png>
-<Figures/sim/imageC18O_3-2_60deg_mom1.png, id=84, 578.16pt x 433.62pt>
+<Figures/sim/imageC18O_3-2_60deg_mom1.png, id=83, 578.16pt x 433.62pt>
 File: Figures/sim/imageC18O_3-2_60deg_mom1.png Graphic file (type png)
 
 <use Figures/sim/imageC18O_3-2_60deg_mom1.png>
-<Figures/sim/imageC18O_3-2_60deg_PV_centre.png, id=85, 578.16pt x 433.62pt>
+<Figures/sim/imageC18O_3-2_60deg_PV_centre.png, id=84, 578.16pt x 433.62pt>
 File: Figures/sim/imageC18O_3-2_60deg_PV_centre.png Graphic file (type png)
 
 <use Figures/sim/imageC18O_3-2_60deg_PV_centre.png>
-<Figures/sim/imageC18O_3-2_75deg_contSub.png, id=86, 578.16pt x 433.62pt>
+<Figures/sim/imageC18O_3-2_75deg_contSub.png, id=85, 578.16pt x 433.62pt>
 File: Figures/sim/imageC18O_3-2_75deg_contSub.png Graphic file (type png)
 
 <use Figures/sim/imageC18O_3-2_75deg_contSub.png>
-<Figures/sim/imageC18O_3-2_75deg_mom1.png, id=87, 578.16pt x 433.62pt>
+<Figures/sim/imageC18O_3-2_75deg_mom1.png, id=86, 578.16pt x 433.62pt>
 File: Figures/sim/imageC18O_3-2_75deg_mom1.png Graphic file (type png)
 
 <use Figures/sim/imageC18O_3-2_75deg_mom1.png>
-<Figures/sim/imageC18O_3-2_75deg_PV_centre.png, id=88, 578.16pt x 433.62pt>
+<Figures/sim/imageC18O_3-2_75deg_PV_centre.png, id=87, 578.16pt x 433.62pt>
 File: Figures/sim/imageC18O_3-2_75deg_PV_centre.png Graphic file (type png)
 
 <use Figures/sim/imageC18O_3-2_75deg_PV_centre.png>
-Underfull \hbox (badness 2961) in paragraph at lines 330--331
+Underfull \hbox (badness 2961) in paragraph at lines 329--330
 []\OT1/cmr/m/n/9 Figure show-ing dif-fer-ent tran-si-tions of the same
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--331
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 <./Figures/sim/imageHCOp_1-0_30deg_mom1.png> <./Figures/sim/imageHCOp_1-0_3
-0deg_PV_centre.png> <./Figures/sim/imageC18O_3-2_15deg_contSub.png> <./Figures/
-sim/imageC18O_3-2_15deg_mom1.png> <./Figures/sim/imageC18O_3-2_15deg_PV_centre.
-png>]
+[6 <./Figures/sim/imageC18O_3-2_15deg_contSub.png> <./Figures/sim/imageC18O_3-2
+_15deg_mom1.png> <./Figures/sim/imageC18O_3-2_15deg_PV_centre.png> <./Figures/s
+im/imageC18O_3-2_30deg_contSub.png> <./Figures/sim/imageC18O_3-2_30deg_mom1.png
+>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7 <./Figures/sim/imageC18O_3-2_30deg_contSub.png> <./Figures/sim/imageC18O_3-
-2_30deg_mom1.png> <./Figures/sim/imageC18O_3-2_30deg_PV_centre.png> <./Figures/
-sim/imageC18O_3-2_45deg_contSub.png> <./Figures/sim/imageC18O_3-2_45deg_mom1.pn
-g> <./Figures/sim/imageC18O_3-2_45deg_PV_centre.png>]
+ [7 <./Figures/sim/imageC18O_3-2_30deg_PV_centre.png> <./Figures/sim/imageC18O_
+3-2_45deg_contSub.png> <./Figures/sim/imageC18O_3-2_45deg_mom1.png> <./Figures/
+sim/imageC18O_3-2_45deg_PV_centre.png> <./Figures/sim/imageC18O_3-2_60deg_contS
+ub.png> <./Figures/sim/imageC18O_3-2_60deg_mom1.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8 <./Figures/sim/imageC18O_3-2_60deg_contSub.png> <./Figures/sim/imageC18O_3-
-2_60deg_mom1.png> <./Figures/sim/imageC18O_3-2_60deg_PV_centre.png> <./Figures/
-sim/imageC18O_3-2_75deg_contSub.png> <./Figures/sim/imageC18O_3-2_75deg_mom1.pn
-g> <./Figures/sim/imageC18O_3-2_75deg_PV_centre.png>] [9
-
-] (./paper.aux) ) 
+ [8 <./Figures/sim/imageC18O_3-2_60deg_PV_centre.png> <./Figures/sim/imageC18O_
+3-2_75deg_contSub.png> <./Figures/sim/imageC18O_3-2_75deg_mom1.png> <./Figures/
+sim/imageC18O_3-2_75deg_PV_centre.png>] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
- 1723 strings out of 495061
- 25650 string characters out of 1182622
- 78342 words of memory out of 3000000
- 4881 multiletter control sequences out of 15000+50000
+ 1713 strings out of 495061
+ 25472 string characters out of 1182622
+ 77294 words of memory out of 3000000
+ 4872 multiletter control sequences out of 15000+50000
  16399 words of font info for 57 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 31i,14n,34p,1638b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx1
-0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr
-/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf
--texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/pu
-blic/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
-ts/cm/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.
-pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/sh
-are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-texlive/fonts/type1/public/
-amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
-mr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr
-/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf
--texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fon
-ts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
-s/cm/cmti8.pfb>
-Output written on paper.pdf (9 pages, 2039304 bytes).
+ 31i,14n,34p,1601b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmbx8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
+mbx9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/t
+exmf-texlive/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr5
+.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/sh
+are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
+msy9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></
+usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on paper.pdf (8 pages, 1873613 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
+ 172 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
