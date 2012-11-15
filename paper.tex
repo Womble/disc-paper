@@ -73,7 +73,7 @@ circumstellar matter -- infrared: stars.
 \section{Description of the Model}
 
 %-describe the envelope structure (pre-stellar core)
-The model used to simulate the emission from a young protoplanetary disc is a hybrid model created from hydrodynamical models of an infalling prestellar core and a gravitationally unstable protoplanetary disc. The prestellar core model is based upon the model of Keto \& Caselli (2010). This describes an infalling pre-stellar core, with densities temperatures and velocities given by the model of the collapse of a 10 solar mass Bonnor-Ebert sphere and provides a match to line profiles seen in the pre-stellar core L1544. Some slight modification due to the addition of Oxygen lines (Keto et al 2012 in prep) have been been added to this model resulting in a slight decrease in the peak infall velocity. This prestellar core model extends from 80$\,$au out to 10,000$\,$AU. The model is a 1D spherically symmetric model with inward motions (see figure \ref{l1544model}).\newline
+The physical and chemical models used to simulate the emission from a young protoplanetary disc is a hybrid model created from hydrodynamical models of an infalling prestellar core and a gravitationally unstable protoplanetary disc. The prestellar core model is based upon the model of Keto \& Caselli (2010). This describes an infalling pre-stellar core, with densities temperatures and velocities given by the model of the collapse of a 10 solar mass Bonnor-Ebert sphere and provides a match to line profiles seen in the pre-stellar core L1544. Some slight modification due to the addition of Oxygen lines (Keto et al 2012 in prep) have been been added to this model resulting in a slight decrease in the peak infall velocity. This prestellar core model extends from 80$\,$au out to 10,000$\,$AU. The model is a 1D spherically symmetric model with inward motions (see figure \ref{l1544model}).\newline
 
 
 \begin{figure}
@@ -85,7 +85,13 @@ The model used to simulate the emission from a young protoplanetary disc is a hy
 \begin{figure*}
  \includegraphics[width=168mm]{Figures/model/rhoT2.png}
  \label{rhoT} 
- \caption{Left: A 3D plot of log density (m$^3$) showing the spiral structure in the xy plane and scale height of the disc. Right: The 3D temperature structure of the disc; regions less than 40 degrees are not shown in 3D, demonstrating the narrow central region containing hot material.}
+ \caption{Left: A 3D plot of log number density (m$^{-3}$) showing the spiral structure in the xy plane and scale height of the disc. Right: The 3D temperature structure of the disc; regions cooler than 40 degrees are not shown in 3D, demonstrating the narrow central region containing hot material.}
+\end{figure*}
+
+\begin{figure*}
+ \includegraphics[width=168mm]{Figures/model/columnDensities2.png}
+ \label{Chemistry} 
+ \caption{Column densities of H$_2$CO, OCS and HCO$^+$ used in the disc model. Figure adapted from Ilee at al. (2011)}
 \end{figure*}
 
 \begin{figure}
@@ -101,14 +107,14 @@ At radii less than 80$\,$au the physical structure is given by the hydrodynamic 
 %-describe the chemistry  - refer to Ilee et al. which have been taken as input to the rad transfer (RT) code
 Chemical abundances in the disc were taken from Ilee et. al (2011) which followed the changes of chemical abundances of trace particles moving through the disc as it evolved. The abundances of 125 species related by 1334 reactions were followed through the time evolution of the disc. These abundances were interpolated onto a 51$^3$ grid covering the disc with cells of size 2.2$\times$2.2$\times$0.22$\,$au. Abundances in the envelope model were as follows:\newline
 
-(tableify this?)\newline
-HCO$^+$: as the H2O profile from Caselli (2012, submitted) scaled so that the maximum abundance is 10$^{-8}$\newline
-HNO: constant abundance of 5$\times$10${-11}$\newline
-HCS$^+$: 10$^{-11}$\newline
-OCS: constant abundance of 10$^{-9}$\newline
+%(tableify this?)
+HCO$^+$: As the H$_2$O profile from Caselli et al. (2012, submitted) scaled so that the maximum abundance is 10$^{-8}$\newline
+HNO: Constant abundance of 5$\times$10$^{-11}$\newline
+HCS$^+$: Constant abundance of 10$^{-11}$\newline
+OCS: Constant abundance of 10$^{-9}$\newline
 H$_2$CO: 1.5$\times$10$^{-9}$ decreased by a factor of 40 at radii less than 8250au (Young et al 2004)\newline
 CS:  3$\times$10$^{-9}$ decreased by a factor of 10,000 at radii less than 6700au (Tafalla, santiago-garcia and myers 2006)\newline
-CO: as the H2O profile from Caselli (2012, submitted) scaled so that the maximum abundance is CO maximum\newline
+CO: As the H2O profile from Caselli (2012, submitted) scaled so that the maximum abundance is CO maximum ***which is....***\newline
 
 
 %-describe the RT used (LIME) 
@@ -122,9 +128,9 @@ LIME (Brinch 2011), the radiative transfer program used, calculates line intensi
 \end{figure}
 
 \begin{figure}
- \includegraphics[width=84mm]{Figures/model/lime_points_rz2.png}
+ \includegraphics[width=84mm]{Figures/model/lime_points_rz_histo.png}
  \label{points}
- \caption{A plot of the positions of the points selected to sample the model}
+ \caption{A histogram of the point distribution throughout the model.}
 \end{figure}
 
 In order to construct the grid, points are randomly selected from the volume being simulated then compared against a reference point. Grid points are selected at random in cylindrical co-ordinates, linearly spaced in z and $\phi$ and logarithmically spaced in r. For each point to be selected a random number $\alpha$ is drawn from the semi-open set [0,$\,$1) as a threshold. After selection of random co-ordinates the Hydrogen density and molecular density at the point (n and m) are compared against the densities of a reference point on the inner edge of the disc (n$_0$ and m$_0$). If $\alpha<\left( \frac{n}{n_0} \right)^{0.3}$ or $\alpha< \left( \frac{m}{m_0} \right)^{0.3}$ then the point is selected for use, if not then another r, $\phi$, z co-ordinate is selected. The weighting function and griding functions were selected empirically to sample both the all scales while ensuring the majority of the points went into the inner disc which is the region of interest. 20\% of these points are forced to be at radii greater than $\sqrt{R_{min}R_{max}}$ (where $R_{min}$ and $R_{max}$ are the inner and outer radius of the model) in order to stop too many of the selecected points clustering in the high density disc and leaving the envelope undersampled. In addiation to this method of selection 5\% of the points are linearly distributed in x, y and z with no bias with regards to density or abundance. This provides a minimum level of sampling for the large low density regions in the outer parts of the simulated volume. See figure \ref{points} for example of the points distribution in r, z. \newline
@@ -132,7 +138,7 @@ In order to construct the grid, points are randomly selected from the volume bei
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/average_comparison.png}
  \label{averages}
- \caption{A plot showing the difference between a single LIME continuum image at 300$\,$GHz and the average of ten such images from different runs of the same model in LIME}
+ \caption{A plot showing the difference between a single LIME continuum image at 300$\,$GHz (right) and the average of ten such images from different runs of the same model in LIME (left).}
 \end{figure}
 
 
@@ -162,7 +168,7 @@ The simulations done are focused upon frequencies within ALMA band 7, selected t
  \caption{CO J=3-2 PV through y=0''}
 \end{figure}
 
-Figures 6,7 and 8 show synthetic images of the CO J=3-2 line at 345.8$\,$GHz. As the upper level for this line is at 33$\,$K above the ground state this transition should be excited through out disc. given the large and uniform nature of the abundance of CO in the disc this line will be optically thick and this is only mapping the outer regions of the disc. In common with most transitions simulated, the line is seen almost exclusively in absorption of the disc continuum. The region of emission in the centre is where there is no continuum background to be absorbed.  Some indications of spiral structure can be seen but are indistinct. ***not sure how useful these are, might be worth cutting them?***\newline
+Figures 6,7 and 8 show synthetic images of the CO J=3-2 line at 345.8$\,$GHz. As the upper level for this line is at 33$\,$K above the ground state this transition should be excited through out disc. given the large and uniform nature of the abundance of CO in the disc this line will be optically thick and this is only mapping the outer regions of the disc. In common with most transitions simulated, the line is seen almost exclusively in absorption against the disc continuum. The region of emission in the centre is where there is no continuum background to be absorbed.  Some indications of spiral structure can be seen but are indistinct. ***not sure how useful these are, might be worth cutting them?***\newline
 
 
 
@@ -178,7 +184,7 @@ Figures 6,7 and 8 show synthetic images of the CO J=3-2 line at 345.8$\,$GHz. As
  \caption{OCS 28-27 PV through centre}
 \end{figure}
 
-The OCS lines in alma band 7 (22-21 through 30-29) with upper energy levels between 161 and 271 K above the ground state provide a way to trace hot shocked gas in spiral arms without resolving structure. Figures \ref{OCS_mom0} \& \ref{smoothOCS_mom0} show the integrated intensity of the OCS J=28-27 line in the model described previously and one where the disc section of the model is an axis-symmetric model created by taking the azimuthal average of density, temperature and molecular abundance. The order of magnitude difference in the line intensity provides a method to detect hot dense gas without being able to resolve the spiral structure spatially.\newline
+After looking at a variety of lines which could be observed of ALMA band 6 or 7 (211-275$\,$GHz and 275-373$\,$GHz) we found that the OCS lines in alma band 7 (22-21 through 30-29) with upper energy levels between 161 and 271 K above the ground state provide a way to trace hot shocked gas in spiral arms without resolving structure. Figures \ref{OCS_mom0} \& \ref{smoothOCS_mom0} show the integrated intensity of the OCS J=28-27 line in the model described previously and one where the disc section of the model is an axis-symmetric model created by taking the azimuthal average of density, temperature and molecular abundance. The order of magnitude difference in the line intensity provides a method to detect hot dense gas without being able to resolve the spiral structure spatially.\newline
 
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imagesmoothedOCS_28-27_30deg_contSub.png}
@@ -217,26 +223,103 @@ More complex molecules such as H$_2$CO with many closely spaced spectral lines c
 (figure of temperature as a function of line ratio for 2 sets of formaldehyde lines and map of derived temperature, talk to P about this. This doesn't seem doable with the lines around 1mm for alma)\newline
 
 \begin{figure}
- \includegraphics[width=84mm]{Figures/sim/imageHCOp_3-2_30deg_contSub.png}
+ \includegraphics[width=84mm]{Figures/sim/imageHCOp_1-0_30deg_contSub.png}
 
- \caption{HCO$^+$ 3-2 Continuum subtracted mom0}
+ \caption{HCO$^+$ 1-0 Continuum subtracted mom0}
 \end{figure}
 
 \begin{figure}
- \includegraphics[width=84mm]{Figures/sim/imageHCOp_3-2_30deg_mom1.png}
+ \includegraphics[width=84mm]{Figures/sim/imageHCOp_1-0_30deg_mom1.png}
 
- \caption{HCO$^+$ 3-2 mom1map}
+ \caption{HCO$^+$ 1-0 mom1map}
+\end{figure}
+
+\begin{figure}
+ \includegraphics[width=84mm]{Figures/sim/imageHCOp_1-0_30deg_PV_centre.png}
+
+ \caption{HCO$^+$ 1-0 pv through centre}
 \end{figure}
 
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imageHCOp_3-2_30deg_PV_centre_2.png}
-
+ \label{hcop_pv}
  \caption{HCO$^+$ 3-2 PV through centre with rotation curve from figure \ref{velocity} *** should the velocities in this be reduced by cos(30) as we're not in the plane of rotation? ***}
 \end{figure}
 
-Some molecules such as HCO$^+$ trace only the outer regions of the disc (ref ilee 2011) and so can be used to look at the extended velocity and physical structure. In these colder less dense regions we see the molecular lines in emission rather than absorption \newline
+Some molecules such as HCO$^+$ trace only the outer regions of the disc (Ilee 2011) and so can be used to look at the extended velocity and physical structure. In these colder less dense regions we see the molecular lines in emission rather than absorption. Figure \ref{hcop_pv} shows the rotation curve of the model as shown in figure \ref{velocity} against the HCO$^+$ J=3-2 line emission. It is clear that from observations such as these the rotation curve of a disc could be reconstructed.\newline
 \newline \newline
 
+
+
+
+In all the simulations except HCO$^+$ we see molecular lines in absorption throughout the majority of the disc and in some cases a small amount of emission towards the centre, where the inclination of the disc allows us the view the low density but moderate temperature region inside the inner edge of the spiral structures without any high temperature and density material behind it.\newline
+
+
+
+
+\section{ALMA Predictions}
+
+%- current status (Cycle 1) - Figure
+%OCS + C18O + H2CO + HNO/CS/
+%- final status - Figure 
+
+
+\begin{figure}
+ \includegraphics[width=84mm]{Figures/sim/casa_cont_337GHz.png}
+
+ \caption{continuum emission at 337GHz simulated for ALMA most extended configuration}
+\end{figure}
+
+\begin{figure}
+ \includegraphics[width=54mm]{Figures/sim/casa_OCS_28-27_pv.png}
+
+ \caption{OCS 28-29 pv diagram simulated for ALMA most extended configuration}
+\end{figure}
+
+
+\begin{figure}
+ \includegraphics[width=84mm]{Figures/sim/casa_OCS_28-27_mom0.png}
+
+ \caption{OCS 28-29 integrated intesity simulated for ALMA most extended configuration}
+\end{figure}
+
+
+\begin{figure}
+ \includegraphics[width=54mm]{Figures/sim/casa_C17O_3-2_pv.png}
+
+ \caption{C17O 3-2 30 deg PV through centre simulated for ALMA most extended configuration}
+\end{figure}
+
+\begin{figure}
+ \includegraphics[width=84mm]{Figures/sim/casa_C17O_3-2_mom0.png}
+
+ \caption{C17O 3-2 30 deg integrated intensity simulated for ALMA most extended configuration}
+\end{figure}
+
+
+
+
+\section{Discussion}
+
+In this paper we have performed radiative transfer simulations of a hybrid model comprising a 0.4$\, M_\odot$ self gravitating disc with radius 64$\,AU$ showing spiral density waves, surrounded by an envelope simulated as a collapsing 10$\,M_\odot$ BE-sphere. CASA simulations show that at a distance of 100$\,$pc both spatial resolution of the spirals in such a disc and extraction of kinematic and temperature from molecular lines are possible in ALMA band 7. Our simulations show that many  molecular species are predominantly seen in absorption towards the centre of  self-gravitating protoplanetary discs.\newline
+The quiescent nature of the envelope around such discs only obscures them within $\pm\,0.5 km\,s^{-1}$.\newline
+Hot, shocked gas can be detected in such a disc without resolving it by observing OCS transitions between 26-27 to 30-29.\newline
+One assumption made in this model is that the gas and dust are in thermal equilibrium. If they are not and the dust is significantly cooler than the gas then transitions may not show up in absorption. In the model spirals shock heat the mid-plane layer and the colder more diffuse gas absorbs the continuum from it (need to ask Aaron whether this is the case, the narrow mid-plane is much hotter than the rest but should check that this is due to shock heating, though with there being no accretion or irradiation i don't see what else it could be)\newline
+note that the disc mass is on the high end for early discs\newline
+rotation curves can be gathered from these observations even with spiral structure\newline
+
+
+
+
+\section*{Acknowledgements}
+
+stuff here
+\newpage
+
+
+\appendix
+
+\section[]{Other Inclinations}
 
 Figures showing different inclinations  
 \begin{figure}
@@ -334,42 +417,6 @@ Figures showing different inclinations
  \caption{C18O 3-2 75 deg PV through centre}
 \end{figure}
 
-
-In all the simulations except HCO$^+$ we see molecular lines in absorption throughout the majority of the disc and in some cases a small amount of emission towards the centre, where the inclination of the disc allows us the view the low density but moderate temperature region inside the inner edge of the spiral structures.\newline
-
-
-
-
-\section{ALMA Predictions}
-
-%- current status (Cycle 1) - Figure
-%OCS + C18O + H2CO + HNO/CS/
-%- final status - Figure 
-
-
-casa continuum, OCS and HCO+ figs here
-
-
-\section{Discussion}
-
-In this paper we have performed radiative transfer simulations of a hybrid model comprising a 0.4$\, M_\odot$ self gravitating disc with radius 64$\,AU$ showing spiral density waves, surrounded by an envelope simulated as a collapsing 10$\,M_\odot$ BE-sphere. CASA simulations show that at a distance of 100$\,pc$ both spatial resolution of the spirals in such a disc and extraction of kinematic and temperature from molecular lines are possible in ALMA band 7. Our simulations show that many  molecular species are predominantly seen in absorption towards the centre of  self-gravitating protoplanetary discs.\newline
-The quiescent nature of the envelope around such discs only obscures them within $\pm\,0.5 km\,s^{-1}$.\newline
-Hot, shocked gas can be detected in such a disc without resolving it by observing OCS transitions between 26-27 to 30-29.\newline
-Mention that dust and gas are assumed to be in temperature equilibrium if they aren't and dust is significantly cooler then transitions may not show up in absorption. atm spirals shock heat the mid-plane layer and the colder more diffuse gas absorbs the continuum from it (need to ask Aaron whether this is the case, the narrow mid-plane is much hotter than the rest but should check that this is due to shock heating, though with there being no accretion or irradiation i don't see what else it could be)\newline
-note that the disc mass is on the high end for early discs\newline
-rotation curves can be gathered from these observations even with spiral structure\newline
-
-
-
-
-\section*{Acknowledgements}
-
-stuff here
-
-
-%\appendix
-%
-%\section[]{Large gaps in L\lowercase{y}${\balpha}$ forests\\* due to fluctuations in line %distribution}
 %
 %(This appendix was not part of the original paper by
 %A.V.~Raveendran and is included here just for illustrative
