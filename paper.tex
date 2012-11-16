@@ -68,7 +68,7 @@ circumstellar matter -- infrared: stars.
 
 1. description of what has been done so far on the modelling and radiative transfer of disks (this includes also more evolved disks -- Visser et al., Walsh et al., Aikawa et al. ..)
 2. focus on the young disks (work done by Machida et al., Dapp, Basu \& Kunz 2012, .. for their formation; work by Boley et al. on the physical evolution ; Ilee et al. for chemistry) 
-3. previous attempts to observe these young disks: (a) simulations (Cossins et al. 2010); (b) observations: Fuente et al. 2010 (AB Aur); Jorgensen \& van Dishoeck (H$_2^{18}$O and the HDO/H2O ratio); Pineda et al. (2012); other papers talking about "hot corinos" (Bottinelli et al. ....)
+3. previous attempts to observe these young disks: (a) simulations (Cossins et al. 2010); (b) observations: Fuente et al. 2010 (AB Aur); Jorgensen \& van Dishoeck (H$_2^{18}$O and the HDO/H$_2$O ratio); Pineda et al. (2012); other papers talking about "hot corinos" (Bottinelli et al. ....)
 
 \section{Description of the Model}
 
@@ -118,7 +118,7 @@ CO: As the H2O profile from Caselli (2012, submitted) scaled so that the maximum
 
 
 %-describe the RT used (LIME) 
-LIME (Brinch 2011), the radiative transfer program used, calculates line intensities based on a weighted sample of randomly chosen points in a continuous 3d model. The method of selecting these points is given in the griding section. At each of these points the density of the main collision partner (in this case H$_2$), gas and dust temperatures, velocity, molecular abundances and turbulent velocity and taken from the model. These points are then smoothed by Lloyds algorithm (Lloyd 1982) in order to minimise the variation in distance between points whilst keeping the same underlying distribution. These points are then connected by Delaunay triangulation and it is down these paths that photons are restricted to propagating (figures \ref{grid}). The levels of molecules in question are then  calculated at each of these points from collisional and radiative (de)excitation and the local radiation field is calculated. This is repeated 20 times with the populations of each level converging towards a single value.\newline
+The radiative transfer program used, LIME (Brinch 2011), calculates line intensities based on a weighted sample of randomly chosen points in a continuous 3d model. The method of selecting these points is given in the griding section. At each of these points the density of the main collision partner (in this case H$_2$), gas and dust temperatures, velocity, molecular abundances and turbulent velocity and taken from the model. These points are then smoothed by Lloyds algorithm (Lloyd 1982) in order to minimise the variation in distance between points whilst keeping the same underlying distribution. These points are then connected by Delaunay triangulation and it is down these paths that photons are restricted to propagating (figures \ref{grid}). The levels of molecules in question are then  calculated at each of these points from collisional and radiative (de)excitation and the local radiation field is calculated. This is repeated 20 times with the populations of each level converging towards a single value.\newline
 
 
 \begin{figure}
@@ -150,19 +150,19 @@ For the purpose of simulating observations the model was placed at roughly the d
 The simulations done are focused upon frequencies within ALMA band 7, selected to give the best trade off between resolution and sensitivity for early ALMA science.
 (Note the moment 1 and 0 maps were created by integrating between -12.5 to -0.5 km$\,$s$^{-1}$ and +0.5 to +12.5 km$\,$s$^{-1}$ to avoid being dominated by the contribution from the envelope, this can be seen in some PV diagrams as the strong absorption feature at all positions around zero velocity, moment 1 maps are shown with a cutoff of 1/1000 of the peak emission/absorption value)\newline
 
-\begin{figure}[H]
+\begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imageCO_3-2_30deg_contSub.png}
 
  \caption{CO J=3-2 Continuum subtracted mom0}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imageCO_3-2_30deg_mom1.png}
 
  \caption{CO J=3-2 moment 1 map}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imageCO_3-2_30deg_PV_centre.png}
 
  \caption{CO J=3-2 PV through y=0''}
@@ -172,13 +172,13 @@ Figures 6,7 and 8 show synthetic images of the CO J=3-2 line at 345.8$\,$GHz. As
 
 
 
-\begin{figure}[H]
+\begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imageOCS_28-27_30deg_composite_contSub.png}
  \label{OCS_mom0}
  \caption{OCS 28-27 Continuum subtracted mom0}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imageOCS_28-27_30deg_composite_PV_centre.png}
 
  \caption{OCS 28-27 PV through centre}
@@ -247,8 +247,7 @@ More complex molecules such as H$_2$CO with many closely spaced spectral lines c
 \end{figure}
 
 Some molecules such as HCO$^+$ trace only the outer regions of the disc (Ilee 2011) and so can be used to look at the extended velocity and physical structure. In these colder less dense regions we see the molecular lines in emission rather than absorption. Figure \ref{hcop_pv} shows the rotation curve of the model as shown in figure \ref{velocity} against the HCO$^+$ J=3-2 line emission. It is clear that from observations such as these the rotation curve of a disc could be reconstructed.\newline
-\newline \newline
-
+\newline
 
 
 
@@ -301,12 +300,11 @@ In all the simulations except HCO$^+$ we see molecular lines in absorption throu
 
 \section{Discussion}
 
-In this paper we have performed radiative transfer simulations of a hybrid model comprising a 0.4$\, M_\odot$ self gravitating disc with radius 64$\,AU$ showing spiral density waves, surrounded by an envelope simulated as a collapsing 10$\,M_\odot$ BE-sphere. CASA simulations show that at a distance of 100$\,$pc both spatial resolution of the spirals in such a disc and extraction of kinematic and temperature from molecular lines are possible in ALMA band 7. Our simulations show that many  molecular species are predominantly seen in absorption towards the centre of  self-gravitating protoplanetary discs.\newline
-The quiescent nature of the envelope around such discs only obscures them within $\pm\,0.5 km\,s^{-1}$.\newline
+In this paper we have performed radiative transfer simulations of a hybrid model comprising a 0.4$\, M_\odot$ self gravitating disc with radius 64$\,AU$ showing spiral density waves, surrounded by an envelope simulated as a collapsing 10$\,M_\odot$ BE-sphere. CASA simulations show that at a distance of 100$\,$pc both spatial resolution of the spirals in such a disc and extraction of kinematic and temperature from molecular lines are possible in ALMA band 7. Our simulations show that many  molecular species are predominantly seen in absorption towards the centre of  self-gravitating protoplanetary discs. The quiescent nature of the envelope around such discs only obscures them within $\pm\,0.5 km\,s^{-1}$.\newline
 Hot, shocked gas can be detected in such a disc without resolving it by observing OCS transitions between 26-27 to 30-29.\newline
-One assumption made in this model is that the gas and dust are in thermal equilibrium. If they are not and the dust is significantly cooler than the gas then transitions may not show up in absorption. In the model spirals shock heat the mid-plane layer and the colder more diffuse gas absorbs the continuum from it (need to ask Aaron whether this is the case, the narrow mid-plane is much hotter than the rest but should check that this is due to shock heating, though with there being no accretion or irradiation i don't see what else it could be)\newline
-note that the disc mass is on the high end for early discs\newline
-rotation curves can be gathered from these observations even with spiral structure\newline
+One assumption made in this model is that the gas and dust are in thermal equilibrium.If they are not and the dust is significantly cooler than the gas then transitions may not show up in absorption.\newline
+The mass of the disc used (0.4$\,\rm{M}_\odot$) is on the high end for early discs (citations for estimate of early class 1 disc masses).\newline 
+In the model spirals shock heat the mid-plane layer and the colder more diffuse gas absorbs the continuum from it, this results in molecular lines being seen in absorbtion whenever lines of sight pass through the cold diffuse gas at larger heights on to the hot dense midplane of the disc. Rotation curves can be gathered from these observations even with spiral structure\newline
 
 
 
