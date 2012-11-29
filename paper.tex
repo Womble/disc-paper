@@ -42,7 +42,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title[Disc stuff]{Disc stuff}
+\title[Simulated observations of young protoplanetary disks]{Young protoplanetary disks}
 \author[Tom  Douglas, Paola Caselli, Et al.]{Tom Douglas$^{1}$\thanks{E-mail:
 pytd@leeds.ac.uk}, Paola Caselli$^{1}$\\
 $^{1}$School of Physics and Astronomy, University of Leeds, Leeds LS2 9JT, UK}
@@ -66,21 +66,19 @@ circumstellar matter -- infrared: stars.
 
 \section{Introduction}
 
-1. description of what has been done so far on the modelling and radiative transfer of disks (this includes also more evolved disks -- Visser et al., Walsh et al., Aikawa et al. ..)
-2. focus on the young disks (work done by Machida et al., Dapp, Basu \& Kunz 2012, .. for their formation; work by Boley et al. on the physical evolution ; Ilee et al. for chemistry) 
-3. previous attempts to observe these young disks: (a) simulations (Cossins et al. 2010); (b) observations: Fuente et al. 2010 (AB Aur); Jorgensen \& van Dishoeck (H$_2^{18}$O and the HDO/H$_2$O ratio); Pineda et al. (2012); other papers talking about "hot corinos" (Bottinelli et al. ....)
+The formation and early evolution of protoplanetary disks around solar-type and low-mass protostars has little observational support, despite of the fast growing list of theoretical models on the dynamical evolution of star forming dense cores (e.g. Krasnopolsky et al. 2011; Machida et al. 2011; Braiding \& Wardle 2012). The reason for this is that young protostars are surrounded by thick envelopes and power energetic outflows, thus observations of the young disks, predicted to have sizes of about 100\,AU and masses as large as 10\% the original core mass (e.g. Joos et al. 2012), are challenging. The use of sensitive interferometers is needed to achieve high angular resolution and spatially/spectrally disentangle the various (disk + envelope + outflow) components as well to filter out the extended emission tracing envelope material. 
 
-\section{Description of the Model}
+After the pioneer work of, e.g., Chandler et al. (1995), Brown et al. (2000), Looney et al. (2000), recent interferometric observations have discovered compact embedded disks in a sample of Class 0 (Andr\'e et al. 2000) sources, finding masses between 0.4 and  $>$1 M$_{\odot}$ (Jorgensen et al. 2007, 2009; Enoch et al. 2011). A 130\,AU disk was discovered toward a Class 0 source in Perseus, using Jansky Very Large Array (JVLA) observations of NH$_3$ (Choi et al. 2007). Pineda et al. (2012) observed methyl formate with the Atacama Millimeter and sub-millimeter Array (ALMA) and found evidence of rotation toward one of the proto-binary Class 0 sources embedded in IRAS 16293-2422. These observations are consistent with an almost edge-on disk. When ALMA will be completed, it will be finally possible to spatially resolve these young disks and, for the first time, put stringent constraints on theoretical models. As full-operational ALMA is fast approaching, it is important to provide observational predictions based on dynamical models of young protoplanetary disks. 
 
-%-describe the envelope structure (pre-stellar core)
-The physical and chemical models used to simulate the emission from a young protoplanetary disc is a hybrid model created from hydrodynamical models of an infalling prestellar core and a gravitationally unstable protoplanetary disc. The prestellar core model is based upon the model of Keto \& Caselli (2010). This describes an infalling pre-stellar core, with densities temperatures and velocities given by the model of the collapse of a 10 solar mass Bonnor-Ebert sphere and provides a match to line profiles seen in the pre-stellar core L1544. Some slight modification due to the addition of Oxygen lines (Keto et al 2012 in prep) have been been added to this model resulting in a slight decrease in the peak infall velocity. This prestellar core model extends from 80$\,$au out to 10,000$\,$AU. The model is a 1D spherically symmetric model with inward motions (see figure \ref{l1544model}).\newline
+In this paper, we focus our attention to the young self-gravitating disks of Boley \& Durisen (2008), where episodic heating induced by spiral shocks is present, as this may be a good representation of the earliest phases of protoplanetary disks and an alternative to the young "static" disks studied by, e.g. Visser et al. (2009, 2011). As shown by Ilee et al. (2011), the spiral shocks cause desorption of volatiles from dust icy mantles and trigger gas-phase chemical reactions with activation energies, which are inactive at lower temperatures. These processes produce clear chemical signatures of the disk dynamics. With the use of 3D radiative transfer modeling, we perform simulated ALMA observations of the disk studied by Ilee et al. (2011) and identify the best tracers of the physical structure of self-gravitating disks. The physical, chemical and radiative transfer models are described in Sect\,\ref{sec:description_model}. Radiative transfer results are in Sect.\,\ref{sec:model_results}, while ALMA simulated observations are in Sec.\,\ref{sec:alma_predictions}. Discussions and conclusions can be found in Sect.\,\ref{sec:discussion}. 
+  
+  
+\section{Description of the Model} \label{sec:description_model}
 
+\subsection{Physical and chemical structure} \label{subsec:physical_structure}
 
-\begin{figure}
- \includegraphics[width=84mm]{Figures/model/L1544model_used.png}
- \label{L1544}
- \caption{Model of the prestellar core L1544 used as the envelope in the hybrid model. Showing temperature and dust temperature (red, green) in kelvin, log number density (blue) in cm$^{-3}$ and inward velocity$\times$100 (cyan) in m$\,$s$^{-1}$. Adapted from Keto \& Caselli (2010)}
-\end{figure}
+The physical model used to simulate the emission from a young protoplanetary disc is a hybrid model obtained from embedding a gravitationally unstable protoplanetary disk  within an envelope with characteristics similar to the well-studied pre-stellar core L1544, as derived by Keto \& Caselli (2010; hereafter KC2010). The KC2010 model follows the dynamical, chemical and thermal evolution of a contracting Bonnor-Ebert (Bonnor 1956; Ebert 1957) sphere with total mass of 10\,M$_{\odot}$, until it reaches the density, temperature and velocity profiles which best match observations. The pre-stellar core model adopted here contains slight modifications due to the inclusion of oxygen cooling in the outer regions of the cloud, where CO is mostly photodissociated (Keto et al., in preparation), and it is shown in Fig.\,\ref{fig:l1544_model}.  \newline
+
 
 \begin{figure*}
  \includegraphics[width=168mm]{Figures/model/rhoT2.png}
@@ -95,6 +93,13 @@ The physical and chemical models used to simulate the emission from a young prot
 \end{figure*}
 
 \begin{figure}
+ \includegraphics[width=84mm]{Figures/model/L1544model_used.png}
+ \label{fig:l1544_model}
+ \caption{Model of the pre-stellar core L1544 used as the envelope of the young protoplanetary disk in the hybrid model. Showing temperature (red) and dust (green) temperature in kelvin, log number density (blue) in cm$^{-3}$ and inward velocity$\times$100 (cyan) in m$\,$s$^{-1}$. Adapted from Keto \& Caselli (2010) and Keto et al. (2012, in preparation).}
+\end{figure}
+
+
+\begin{figure}
  \includegraphics[width=84mm]{Figures/model/rotational_velocities.png}
  \label{velocity}
  \caption{Azimuthaly averaged rotational velocity in the disc mid-plane with best fit curve}
@@ -102,23 +107,29 @@ The physical and chemical models used to simulate the emission from a young prot
 
 
 %-describe the physical structure of the disk (density and temperature) -- one figure showing the physical structure and the kinematics (2-panels figure)
-At radii less than 80$\,$au the physical structure is given by the hydrodynamic model described in Ilee et al. (2011), based on the work of Boley(2007), and Boley(2009). This model describes a 0.39$\,\rm{M}_\odot$ self-gravitating disc featuring prominent spiral arms. H$_2$ number densities in the disc range from 10$^{10}$-10$^{19}\,\rm{m}^{-3}$, and temperatures range from 30-400 K (figure \ref{rhoT}). The dust and gas temperatures in the disc are assumed to be in equilibrium. The model is sampled over a regular grid of size 256$\times$256$\times$64 with spatial resolution of 0.5$\,$au in x, y and z. The majority of the mass lies in the mid-plane of the disc. For the models using a smoothed disc the same physical and chemical model is used but with the temperature, density and abundance averaged in $\phi$. The gas/dust mass ratio was assumed to be 1/100 throughout both sections model and the opacities were given by the model of dust grains with thick icy mantles and 10$^6\,$yr coagulation from Ossenkopf and Henning (1994)\newline
+The pre-stellar core structure is maintained down to a radius of 80\,AU, within which the young protoplanetary disk has been plugged in. The disk structure is derived by the hydrodynamic model of Boley(2007) and Boley (2009). The particular model considered here (as well as in Ilee et al. 2011) is a 0.39$\,\rm{M}_\odot$ self-gravitating disc featuring prominent spiral arms. H$_2$ number densities in the disc range from 10$^{10}$-10$^{19}\,\rm{m}^{-3}$, and temperatures range from 30-400 K (figure \ref{rhoT}). The dust and gas temperatures in the disc are assumed to be in equilibrium. The model is sampled over a regular grid of size 256$\times$256$\times$64 with spatial resolution of 0.5$\,$au in x, y and z. The gas/dust mass ratio was assumed to be 1/100 throughout both sections model and the opacities were given by the model of dust grains with thick icy mantles and 10$^6\,$yr coagulation from Ossenkopf and Henning (1994). THe gas number density and temperature structure are displayed in Fig. XX. \newline
+
+%The majority of the mass lies in the mid-plane of the disc. For the models using a smoothed disc the same physical and chemical model is used but with the temperature, density and abundance averaged in $\phi$. The gas/dust mass ratio was assumed to be 1/100 throughout both sections model and the opacities were given by the model of dust grains with thick icy mantles and 10$^6\,$yr coagulation from Ossenkopf and Henning (1994)\newline
 
 %-describe the chemistry  - refer to Ilee et al. which have been taken as input to the rad transfer (RT) code
-Chemical abundances in the disc were taken from Ilee et. al (2011) which followed the changes of chemical abundances of trace particles moving through the disc as it evolved. The abundances of 125 species related by 1334 reactions were followed through the time evolution of the disc. These abundances were interpolated onto a 51$^3$ grid covering the disc with cells of size 2.2$\times$2.2$\times$0.22$\,$au. Abundances in the envelope model were as follows:\newline
+Chemical abundances in the disc were taken from Ilee et. al (2011) which followed the changes of chemical abundances of trace particles moving through the disc as it evolved. The abundances of 125 species related by 1334 reactions were followed through the time evolution of the disc. These abundances were interpolated onto a 51$^3$ grid covering the disc with cells of size 2.2$\times$2.2$\times$0.22$\,$au.  Fig. XX shows a sample of column density maps from Ilee et al. (2011), pointing out the different regions traced by H$_2$CO and OCS, which mostly probe the central warm regions, and HCO$^+$, which preferentially trace the outer spiral pattern as in the central region is destroyed by water molecules (see Ilee et al. 2011 for details).   The simple chemistry in the KC2010 model, adopted here as the envelope of the protoplanetary disk, does not provide detailed abundances of molecular species (besides CO and H$_2$O, see also Caselli et al. 2012). As discussed in the result section (Sec.\,\ref{sec:model_results}), rough guesses have been made based on values measured toward similar object. 
+
+%NOTE: WE SHOULD TALK ABOUT THESE SPECIES AFTER WE SHOW WHICH SPECIES WE SELECT FOR THE RADIATIVE TRANSFER. 
+%Abundances in the envelope model were as follows:\newline
 
 %(tableify this?)
-HCO$^+$: As the H$_2$O profile from Caselli et al. (2012, submitted) scaled so that the maximum abundance is 10$^{-8}$\newline
-HNO: Constant abundance of 5$\times$10$^{-11}$\newline
-HCS$^+$: Constant abundance of 10$^{-11}$\newline
-OCS: Constant abundance of 10$^{-9}$\newline
-H$_2$CO: 1.5$\times$10$^{-9}$ decreased by a factor of 40 at radii less than 8250au (Young et al 2004)\newline
-CS:  3$\times$10$^{-9}$ decreased by a factor of 10,000 at radii less than 6700au (Tafalla, santiago-garcia and myers 2006)\newline
-CO: As the H2O profile from Caselli (2012, submitted) scaled so that the maximum abundance is CO maximum ***which is....***\newline
+%HCO$^+$: As the H$_2$O profile from Caselli et al. (2012, submitted) scaled so that the maximum abundance is 10$^{-8}$\newline
+%HNO: Constant abundance of 5$\times$10$^{-11}$\newline
+%HCS$^+$: Constant abundance of 10$^{-11}$\newline
+%OCS: Constant abundance of 10$^{-9}$\newline
+%H$_2$CO: 1.5$\times$10$^{-9}$ decreased by a factor of 40 at radii less than 8250au (Young et al 2004)\newline
+%CS:  3$\times$10$^{-9}$ decreased by a factor of 10,000 at radii less than 6700au (Tafalla, santiago-garcia and myers 2006)\newline
+%CO: As the H2O profile from Caselli (2012, submitted) scaled so that the maximum abundance is CO maximum ***which is....***\newline
 
 
+\subsection{The radiative transfer code} \label{subsec:radiative_transfer_code}
 %-describe the RT used (LIME) 
-The radiative transfer program used, LIME (Brinch 2011), calculates line intensities based on a weighted sample of randomly chosen points in a continuous 3d model. The method of selecting these points is given in the griding section. At each of these points the density of the main collision partner (in this case H$_2$), gas and dust temperatures, velocity, molecular abundances and turbulent velocity and taken from the model. These points are then smoothed by Lloyds algorithm (Lloyd 1982) in order to minimise the variation in distance between points whilst keeping the same underlying distribution. These points are then connected by Delaunay triangulation and it is down these paths that photons are restricted to propagating (figures \ref{grid}). The levels of molecules in question are then  calculated at each of these points from collisional and radiative (de)excitation and the local radiation field is calculated. This is repeated 20 times with the populations of each level converging towards a single value.\newline
+The radiative transfer program used, LIME (Brinch \&Hogerheijde 2010), calculates line intensities based on a weighted sample of randomly chosen points in a continuous 3D model. The method of selecting these points is given in the griding section. At each of these points, the density of the main collision partner (H$_2$), gas and dust temperatures, velocity, molecular abundances and turbulent velocity are taken from the model. These points are then smoothed by Lloyds algorithm (Lloyd 1982) in order to minimise the variation in distance between points whilst keeping the same underlying distribution. These points are then connected by Delaunay triangulation \footnote{In three dimensions this means that if four points are conneted into a tetrahedron, the sphere circumscribing these four points contains no other points. It can be shown that this connection is unique for a given set of points.} and it is down these paths that photon propagation is restricted (figures \ref{grid}). The level populations of the selected molecules are calculated at each of these points from collisional and radiative (de)excitation and the local radiation field is calculated. This is repeated 20 times with the populations of each level converging towards a single value. This number of iterations is sufficient for the signal to noise ratio of the level populations (as defined in Brinch \&Hogerheijde 2010) to exceed 1000 in 99\% of the points \newline
 
 
 \begin{figure}
@@ -130,10 +141,11 @@ The radiative transfer program used, LIME (Brinch 2011), calculates line intensi
 \begin{figure}
  \includegraphics[width=84mm]{Figures/model/lime_points_rz_histo.png}
  \label{points}
- \caption{A histogram of the point distribution throughout the model.}
+ \caption{A histogram of the point distribution throughout the model. The disc and envelope can be seen as two separate entities which have to be sampled using different point distributions}
 \end{figure}
 
-In order to construct the grid, points are randomly selected from the volume being simulated then compared against a reference point. Grid points are selected at random in cylindrical co-ordinates, linearly spaced in z and $\phi$ and logarithmically spaced in r. For each point to be selected a random number $\alpha$ is drawn from the semi-open set [0,$\,$1) as a threshold. After selection of random co-ordinates the Hydrogen density and molecular density at the point (n and m) are compared against the densities of a reference point on the inner edge of the disc (n$_0$ and m$_0$). If $\alpha<\left( \frac{n}{n_0} \right)^{0.3}$ or $\alpha< \left( \frac{m}{m_0} \right)^{0.3}$ then the point is selected for use, if not then another r, $\phi$, z co-ordinate is selected. The weighting function and griding functions were selected empirically to sample both the all scales while ensuring the majority of the points went into the inner disc which is the region of interest. 20\% of these points are forced to be at radii greater than $\sqrt{R_{min}R_{max}}$ (where $R_{min}$ and $R_{max}$ are the inner and outer radius of the model) in order to stop too many of the selecected points clustering in the high density disc and leaving the envelope undersampled. In addiation to this method of selection 5\% of the points are linearly distributed in x, y and z with no bias with regards to density or abundance. This provides a minimum level of sampling for the large low density regions in the outer parts of the simulated volume. See figure \ref{points} for example of the points distribution in r, z. \newline
+\subsection{Grid Construction} \label{subsec:gridding}
+In order to construct the grid, points are randomly selected from the volume, then compared against a reference point. Grid points are selected at random in cylindrical co-ordinates, linearly spaced in z and $\phi$ and logarithmically spaced in r. For each point to be selected, a random number $\alpha$ is drawn from the semi-open set [0,$\,$1) as a threshold. After selection of random co-ordinates, the hydrogen density and molecular density at the point (n and m, respectively) are compared against the densities of a reference point on the inner edge of the disc (n$_0$ and m$_0$). If $\alpha<\left( \frac{n}{n_0} \right)^{0.3}$ or $\alpha< \left( \frac{m}{m_0} \right)^{0.3}$ then the point is selected for use, if not then another r, $\phi$, z co-ordinate is selected. The weighting function and point distribution were selected empirically to sample all the scales while ensuring that the majority of points are located in the inner disc where the density is higher. 20\% of these points are forced to be at radii greater than $\sqrt{R_{min}R_{max}}$ (where $R_{min}$ and $R_{max}$ are the inner and outer radius of the model) in order to stop too many of the selecected points clustering in the high density disc and leaving the envelope undersampled. In addiation to this method of selection, 5\% of the points are linearly distributed in x, y and z with no bias with regards to density or abundance. This provides a minimum level of sampling for the large low density regions in the outer parts of the simulated volume. See figure \ref{points} for an example of the points distribution in r, z. \newline
 
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/average_comparison.png}
@@ -142,8 +154,9 @@ In order to construct the grid, points are randomly selected from the volume bei
 \end{figure}
 
 
-\section{Model Results}
+\section{Model Results} \label{sec:model_results}
 
+NOTE: YOU NEED TO ADD A LITTLE HISTORY ON WHY YOU SELECTED THESE SPECIES TO DO THE RADIATIVE TRANSFER. CAN YOU PLEASE RESTRUCTURE THIS SECTION ?
 %Figures showing the RT results in a few molecules/transitions (CO, HCO$^+$, HCN, OCS, H2CO, NH3 --- maybe H2O,H2$^{18}$O [to try first])
 The results of these simulations for the molecules OCS, HCO$^+$, H$_2$CO and isotopologues of CO are shown here, other molecules simulated but not shown include HCN, HNC, HNO, HCS$^+$ and  CS.
 For the purpose of simulating observations the model was placed at roughly the distance of nearby low-mass star forming regions (100$\,$pc) and is inclined 30$^\circ$ to edge on. From these observations integrated intensity, intensity weighted velocity and position velocity diagrams through the centre of the model were created.
@@ -237,14 +250,14 @@ More complex molecules such as H$_2$CO with many closely spaced spectral lines c
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/imageHCOp_1-0_30deg_PV_centre.png}
 
- \caption{HCO$^+$ 1-0 pv through centre}
+ \caption{HCO$^+$ 1-0 pv through centre, with the rotation curve from figure \ref{velocity} for comparison}
 \end{figure}
 
-\begin{figure}
- \includegraphics[width=84mm]{Figures/sim/imageHCOp_3-2_30deg_PV_centre_2.png}
- \label{hcop_pv}
- \caption{HCO$^+$ 3-2 PV through centre with rotation curve from figure \ref{velocity} *** should the velocities in this be reduced by cos(30) as we're not in the plane of rotation? ***}
-\end{figure}
+%\begin{figure}
+% \includegraphics[width=84mm]{Figures/sim/imageHCOp_3-2_30deg_PV_centre_2.png}
+% \label{hcop_pv}
+% \caption{HCO$^+$ 3-2 PV through centre with rotation curve from figure \ref{velocity} *** should the velocities in this be reduced by cos(30) as we're not in the plane of rotation? ***}
+%\end{figure}
 
 Some molecules such as HCO$^+$ trace only the outer regions of the disc (Ilee 2011) and so can be used to look at the extended velocity and physical structure. In these colder less dense regions we see the molecular lines in emission rather than absorption. Figure \ref{hcop_pv} shows the rotation curve of the model as shown in figure \ref{velocity} against the HCO$^+$ J=3-2 line emission. It is clear that from observations such as these the rotation curve of a disc could be reconstructed.\newline
 \newline
@@ -256,7 +269,7 @@ In all the simulations except HCO$^+$ we see molecular lines in absorption throu
 
 
 
-\section{ALMA Predictions}
+\section{ALMA Predictions} \label{sec:alma_predictions}
 
 %- current status (Cycle 1) - Figure
 %OCS + C18O + H2CO + HNO/CS/
@@ -298,7 +311,7 @@ In all the simulations except HCO$^+$ we see molecular lines in absorption throu
 
 
 
-\section{Discussion}
+\section{Discussion and conclusions} \label{sec:discussion}
 
 In this paper we have performed radiative transfer simulations of a hybrid model comprising a 0.4$\, M_\odot$ self gravitating disc with radius 64$\,AU$ showing spiral density waves, surrounded by an envelope simulated as a collapsing 10$\,M_\odot$ BE-sphere. CASA simulations show that at a distance of 100$\,$pc both spatial resolution of the spirals in such a disc and extraction of kinematic and temperature from molecular lines are possible in ALMA band 7. Our simulations show that many  molecular species are predominantly seen in absorption towards the centre of  self-gravitating protoplanetary discs. The quiescent nature of the envelope around such discs only obscures them within $\pm\,0.5 km\,s^{-1}$.\newline
 Hot, shocked gas can be detected in such a disc without resolving it by observing OCS transitions between 26-27 to 30-29.\newline
