@@ -91,7 +91,7 @@ The physical model used to simulate the emission from a young protoplanetary dis
 
 
 \begin{figure*}
- \includegraphics[width=168mm]{Figures/model/rhoT2.png}
+ \includegraphics[width=168mm]{Figures/model/rhoT2.eps}
  \label{rhoT} 
  \caption{Left: A 3D plot of log number density (cm$^{-3}$) showing the spiral structure in the xy plane and scale height of the disc. Right: The 3D temperature structure of the disc; regions cooler than 40 degrees are not shown in 3D, demonstrating the narrow central region containing hot material.}
 \end{figure*}
@@ -170,7 +170,7 @@ After 20 iterations of updateing the level populations the model is ray-traced i
 The results of these simulations for the molecules OCS, HCO$^+$, H$_2$CO and isotopologues of CO are shown here, other molecules simulated but not shown include HCN, HNC, HNO, HCS$^+$ and  CS.
 For the purpose of simulating observations the model was placed at roughly the distance of nearby low-mass star forming regions (100$\,$pc) and is inclined at 30$^\circ$ to edge on. From these observations integrated intensity, intensity weighted velocity and position velocity diagrams through the centre of the model were created.
 The simulations done are focused upon frequencies within ALMA band 7, selected to give the best trade off between resolution and sensitivity for early ALMA science {\bf IS BAND 7 STILL THE BEST FOR US TO LOOK AT SEEING AS WE ARE NOW LOOKING AT ALMA FULL CAPABILITY RATHER THAN CYCLE1?}.
-(Note the moment 1 and 0 maps were created by integrating between -12.5 to -0.5 km$\,$s$^{-1}$ and +0.5 to +12.5 km$\,$s$^{-1}$ to avoid being dominated by the contribution from the envelope, this can be seen in some PV diagrams as the strong absorption feature at all positions around zero velocity, moment 1 maps are shown with a cutoff of 1/1000 of the peak emission/absorption value)\newline
+(Note the moment 1 and 0 maps were created by integrating between -12.5 to -0.5 km$\,$s$^{-1}$ and +0.5 to +12.5 km$\,$s$^{-1}$ to avoid being dominated by the contribution from the envelope, this can be seen in some PV diagrams as the strong absorption feature at all positions around zero velocity, moment 1 maps are shown with a cutoff of 1/100 of the peak emission/absorption value)\newline
 %
 %\begin{figure}
 % \includegraphics[width=84mm]{Figures/sim/imageCO_3-2_30deg_contSub.png}
@@ -430,9 +430,9 @@ Figures showing different inclinations
 %\end{figure}
 
 \begin{figure}
- \includegraphics[width=84mm]{Figures/sim/imageC18O_3-2_75deg_PV_centre.png}
-
- \caption{C18O 3-2 75 deg PV through centre}
+  \showthe\columnwidth % Use this to determine the width of the figure.
+  \includegraphics[width=84mm]{Figures/sim/imageC18O_3-2_75deg_PV_centre.png}
+  \caption{C18O 3-2 75 deg PV through centre}
 \end{figure}
 
 \bsp
