@@ -17,6 +17,32 @@
 \documentclass[useAMS,usenatbib]{mn2e}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{wasysym}
+\usepackage{stmaryrd}
+\usepackage{txfonts}
+\usepackage{natbib}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{multirow}
+
+% Journal Definitions
+\def   \aj {{\rm {AJ}}}
+\def   \araa {{\rm {ARA\&A}}}
+\def   \apj {{\rm {ApJ}}}
+\def   \icarus {{\rm {Icarus}}}
+\def   \apjs {{\rm {ApJS}}}
+\def   \apss {{\rm {Ap\&SS}}}
+\def   \aap {{\rm {A\&A}}}
+\def   \aapr {{\rm {A\&AR}}}
+\def   \aaps {{\rm {A\&AS}}}
+\def   \baas {{\rm {BAAS}}}
+\def   \memras {{\rm {MmRAS}}}
+\def   \mnras {{\rm {MNRAS}}}
+\def   \prl {{\rm {Phys. Rev. Lett.}}}
+\def   \jqsrt {{\rm {Journal of Quantitative Spectroscopy and Radiative Transfer}}}
+\def   \apjl{\rm {ApJL}}
+\def   \nat{\rm {Nat.}}
+
 
 % If your system does not have the AMS fonts version 2.0 installed, then
 % remove the useAMS option.
@@ -42,18 +68,43 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title[Young protoplanetary discs]{Simulated observations of young protoplanetary discs}
-%authors arent splitting over 2 lines so rawlings is pushed off the edge
-\author[Tom Douglas, Paola Caselli, Et al.]{Tom Douglas$^{1}$\thanks{E-mail:
-pytd@leeds.ac.uk}, Paola Caselli$^{1}$, Aaron Boley$^{2}$, Richard Durisen$^{3}$, Tom Hartquist$^{1}$, John Ilee$^{1}$, Jonathon Rawlings$^{4}$ \\
-$^{1}$School of Physics and Astronomy, University of Leeds, Leeds LS2 9JT, UK \\
-$^{2}$Department of Astronomy, University of Florida, 211 Bryant Space Center, PO Box 112055, USA\\
-$^{3}$Department of Astronomy, Indiana University, 727 East 3rd Street, Swain West 319, Bloomington, IN 47405, USA\\
+\title[Young protoplanetary discs]{Simulated Observations of Young Protoplanetary Discs}
+%%authors arent splitting over 2 lines so rawlings is pushed off the edge
+%\author[Tom Douglas, Paola Caselli, Et al.]{Tom Douglas$^{1}$\thanks{E-mail:
+%pytd@leeds.ac.uk}, Paola Caselli$^{1}$, Aaron Boley$^{2}$, Richard Durisen$^{3}$, Tom Hartquist$^{1}$, %John Ilee$^{1}$, Jonathon Rawlings$^{4}$ \\
+%$^{1}$School of Physics and Astronomy, University of Leeds, Leeds LS2 9JT, UK \\
+%$^{2}$Department of Astronomy, University of Florida, 211 Bryant Space Center, PO Box 112055, USA\\
+%$^{3}$Department of Astronomy, Indiana University, 727 East 3rd Street, Swain West 319, Bloomington, IN %47405, USA\\
+%%$^{4}$Department of Physics & Astronomy, University College London, London WC1E 6BT, UK\\
+%}
+
+\author[T.~A.~Douglas et al.]
+{\parbox{\textwidth}{Tom Douglas$^{1}$\thanks{E-mail: \texttt{pytd@leeds.ac.uk}},
+Paola Caselli$^{1}$,
+Aaron Boley$^{2}$,
+Richard Durisen$^{3}$,
+Tom Hartquist$^{1}$,
+John Ilee$^{1}$ and
+Jonathon Rawlings$^{4}$\\
+\vspace{0.1cm}\\
+{\small{\it$^{1}$School of Physics and Astronomy, University of Leeds, Leeds LS2 9JT, UK}} \\
+{\small{\it$^{2}$Department of Astronomy, University of Florida, 211 Bryant Space Center, PO Box 112055, USA}}\\
+{\small{\it$^{3}$Department of Astronomy, Indiana University, 727 East 3rd Street, Swain West 319, Bloomington, IN 47405, USA}}\\
+{\small{\it$^{4}$Department of Physics \& Astronomy, University College London, London WC1E 6BT, UK}}\\}}
+
+
+%{\parbox{\textwidth}{
+%$^{1}$School of Physics and Astronomy, University of Leeds, Leeds LS2 9JT, UK \\
+%$^{2}$Department of Astronomy, University of Florida, 211 Bryant Space Center, PO Box 112055, USA\\
+%$^{3}$Department of Astronomy, Indiana University, 727 East 3rd Street, Swain West 319, Bloomington, IN %47405, USA\\
 %$^{4}$Department of Physics & Astronomy, University College London, London WC1E 6BT, UK\\
-}
+%}}
+
+
+
 \begin{document}
 
-\date{In original form 2012}
+\date{In original form 2013}
 
 \pagerange{\pageref{firstpage}--\pageref{lastpage}} \pubyear{2002}
 
@@ -94,7 +145,7 @@ The physical model used to simulate the emission from a young protoplanetary dis
 
 
 \begin{figure*}
- \includegraphics[width=168mm]{Figures/model/rhoT2.eps}
+ \includegraphics[width=168mm]{Figures/model/rhoT6.eps}
  \label{rhoT} 
  \caption{{\bf Left:} A 3D plot of log number density (cm$^{-3}$) showing the spiral structure in the xy plane and scale height of the disc. {\bf Right:} The 3D temperature structure of the disc; regions cooler than 40 degrees are not shown in 3D, demonstrating the narrow central region containing hot material.}
 \end{figure*}
@@ -266,7 +317,7 @@ In order to make predictions on the observability of the synthetic brightness ma
 \begin{figure*}
  \includegraphics[width=168mm]{Figures/sim/channel_map-1.eps} 
  \label{h2co_chanmap}
- \caption{H$_2$CO 4$_{04}$-3$_{03}$ channel maps as simulated by CASA. H$_2$CO line in contours starting at 0.35 mJy$\,$beam$^{-1}\,$km$\,$s$^{-1}$ (absorption in red, emission in blue). Overlaid on the continuum emission. Each map integrates over 2.4 km$\,$s$^{-1}$ with the top left from -10.8 to -8.4 km$\,$s$^{-1}$ to the bottom left ranging from 8.4 to 10.8 km$\,$s$^{-1}$}
+ \caption{H$_2$CO 4$_{04}$-3$_{03}$ channel maps as simulated by CASA. H$_2$CO line in contours starting at 0.35 mJy$\,$beam$^{-1}\,$km$\,$s$^{-1}$ (absorption in blue, emission in red). Overlaid on the continuum emission. Each map integrates over 2.4 km$\,$s$^{-1}$ with the top left from -10.8 to -8.4 km$\,$s$^{-1}$ to the bottom left ranging from 8.4 to 10.8 km$\,$s$^{-1}$}
 \end{figure*}
 
 
