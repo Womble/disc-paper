@@ -202,10 +202,10 @@ After 20 iterations of updating the level populations the model is ray-traced in
 
 Simulations are limited to molecules for which we have abundances in both the disc and envelope, and also have calculated Einstein and collisional coefficients. The Molecular data used is from the lamda database (reference? http://home.strw.leidenuniv.nl/$\sim$moldata/). Lines for the molecules which satisfy these conditions were simulated with LIME for frequencies between 50$\sim$500$\,$GHz, with a focus on lines which could be observed in ALMA band 7 and molecules which are not typically seen in outflows. The results presented in this section represent those lines which show detectable emission/absorption which can be used to trace either spiral structure or rotation.\newline
 
-Transitions focused upon are CO 3-2 (and isotopologues) at 345.8GHz with an upper energy level of 33.2K, HCO+ 1-0 at 89.2GHZ and 4.3K, OCS 28-27 at 340.4GHz and 237.0K and H2CO $4_{04}$-3$_{03}$ at 290.6GHz and 34.9K {\bf maybe worth including a higher frequency line as well? CS at ~650GHz?}. Other molecules simulated but not shown include HCN, HNC, HNO, HCS$^+$ and CS.\newline
+Transitions focused upon are CO 3-2 (and isotopologues) at 345.8GHz with an upper energy level of 33.2K, HCO+ 3-2 at 267GHZ and 25.7K, OCS 26-25 at 316GHz and 205K and H2CO $4_{04}$-3$_{03}$ at 290GHz and 34.9K {\bf maybe worth including a higher frequency line as well? CS at ~650GHz?}. Other molecules simulated but not shown include HCN, HNC, HNO, HCS$^+$ and CS.\newline
 
 For the purpose of simulating observations the model was placed at roughly the distance of nearby low-mass star forming regions (100$\,$pc) and is inclined at 30$^\circ$ to edge on. From these observations integrated intensity, intensity weighted velocity and position velocity diagrams through the centre of the model were created.
-The simulations done are focused upon frequencies within ALMA band 7, selected to give the best trade off between resolution and sensitivity for early ALMA science.
+The simulations were focused upon frequencies within ALMA band 7, selected to give the best trade off between resolution and sensitivity for early ALMA science.
 (Note the moment 1 and 0 maps were created by integrating between -12.5 to -0.5 km$\,$s$^{-1}$ and +0.5 to +12.5 km$\,$s$^{-1}$ to avoid being dominated by the contribution from the envelope, this can be seen in some PV diagrams as the strong absorption feature at all positions around zero velocity, moment 1 maps are shown with a cut-off of 1/100 of the peak emission/absorption value)\newline
 
 \begin{figure}
@@ -282,7 +282,7 @@ In all the simulations except HCO$^+$ we see molecular lines in absorption throu
 
 \section{ALMA Predictions} \label{sec:alma_predictions}
 
-In order to make predictions on the observability of the synthetic brightness maps created by LIME, CASA (common astronomy software applications) was used to simulate observing these with the completed ALMA in its most extended comfiguration for a total time of four hours.
+In order to make predictions on the observability of the synthetic brightness maps created by LIME, CASA (common astronomy software applications) was used to simulate observing these with the completed ALMA in configuration 26 of 28 for a total time of four hours, giving a beam size of between 0.02 and 0.03 arcseconds. In order to clean the images which featured mainly absorption the sky model used was the output of the lime simulations with the continuum subtracted and then the image inverted. The simulated images were cleaned down to a 3\sigma level with \sigma given by the online alma sensitivity calculator (ref).
 
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/casa_cont_337GHz.eps}
