@@ -1,3 +1,4 @@
+
 % mn2esample.tex
 %
 % v2.1 released 22nd May 2002 (G. Hutton)
@@ -85,7 +86,7 @@ Aaron Boley$^{2}$,
 Richard Durisen$^{3}$,
 Tom Hartquist$^{1}$,
 John Ilee$^{1}$ and
-Jonathon Rawlings$^{4}$\\
+Jonathan Rawlings$^{4}$\\
 \vspace{0.1cm}\\
 {\small{\it$^{1}$School of Physics and Astronomy, University of Leeds, Leeds LS2 9JT, UK}} \\
 {\small{\it$^{2}$Department of Astronomy, University of Florida, 211 Bryant Space Center, PO Box 112055, USA}}\\
@@ -183,7 +184,7 @@ After 20 iterations of updating the level populations the model is ray-traced in
 
 
 \begin{figure}
- \includegraphics[width=84mm]{Figures/model/Lime_grid3.eps}
+ \includegraphics[width=84mm]{Figures/model/grid.eps}%Lime_grid3.eps
  \label{grid}
  \caption{A plot of the points selected by the griding process and the paths down which photons can propagate overlaid on a smoothed density model. The points are more concentrated at small radii and in the densest regions.}
 \end{figure}
@@ -196,7 +197,7 @@ After 20 iterations of updating the level populations the model is ray-traced in
 
 \section{Model Results} \label{sec:model_results}
 
-Simulations are limited to molecules for which we have abundances in both the disc and envelope, and also have calculated Einstein and collisional coefficients. The Molecular data used is from the lamda database (reference? http://home.strw.leidenuniv.nl/$\sim$moldata/). Lines for the molecules which satisfy these conditions were simulated with LIME for frequencies between 50$\sim$500$\,$GHz, with a focus on lines which could be observed in ALMA band 7 and molecules which are not typically seen in outflows. The results presented in this section represent those lines which show detectable emission/absorption which can be used to trace either spiral structure or rotation.\newline
+Simulations are limited to molecules for which we have abundances in both the disc and envelope, and also have calculated Einstein and collisional coefficients. The Molecular data used is from the lamda database (Sch\"oier et al. (2005) http://home.strw.leidenuniv.nl/$\sim$moldata/). Lines for the molecules which satisfy these conditions were simulated with LIME for frequencies between 50$\sim$500$\,$GHz, with a focus on lines which could be observed in ALMA band 7 and molecules which are not typically seen in outflows. The results presented in this section represent those lines which show detectable emission/absorption which can be used to trace either spiral structure or rotation.\newline
 
 Transitions focused upon are CO 3-2 (and isotopologues) at 345.8GHz with an upper energy level of 33.2K, HCO$^+$ 3-2 at 267GHZ and 25.7K, OCS 26-25 at 316GHz and 205K and H$_2$CO $4_{04}$-3$_{03}$ at 290GHz and 34.9K {\bf maybe worth including a higher frequency line as well? CS at ~650GHz?}. Other molecules simulated but not shown include HCN, HNC, HNO, HCS$^+$ and CS.\newline
 
@@ -206,14 +207,14 @@ The simulations were focused upon frequencies within ALMA band 7, selected to gi
 
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/continuum.eps}
- \label{points}
- \caption{A 300$\,$GHz continuum image of the model, created from the average of ten LIME runs.}
+ \caption{{\bf Left:}A 300$\,$GHz continuum image of the model, created from the average of ten LIME runs. {\bf Right:} the output of a single radiative transfer simulation, with artefacts due to finite gridding.}
+ \label{averages}
 \end{figure}
 
 \begin{figure*}
- \includegraphics[width=168mm]{Figures/sim/imageOCS_28-27_30deg_composite_all.eps}
- \label{OCS_all}
+ \includegraphics[width=168mm]{Figures/sim/imageOCS_26-25_30deg_all.eps}
  \caption{OCS 28-27 {\bf Left:} Continuum subtracted integrated intensity map showing clearly differentiated spiral structure in the inner regions of the disc, {\bf Right:} Intensity weighted velocity map}
+ \label{OCS_all}
 \end{figure*}
 
 
@@ -252,7 +253,7 @@ OCS traces only the innermost region of the disc and can be used to examine the 
 The abundance of the H$_2$CO molecule is fairly typical of the molecules simulated in Ilee (2011) in that it traces the spiral structure roughly the inner 2/3$^{rd}s$ of the disc. The spiral structure of the disc can be seen clearly in the integrated intensity map and its rotation of detected out to larger radii than is possible with the OCS and is more visible between spiral arms but is otherwise similar in morphology.
 
 \begin{figure*}
-  \includegraphics[width=168mm]{Figures/sim/imageHCOp_1-0_30deg_composite_all.eps}  \caption{HCO$^+$ 1-0 {\bf Left:} Continuum subtracted integrated intensity map, {\bf Right:} Intensity weighted velocity map}
+  \includegraphics[width=168mm]{Figures/sim/imageHCOp_3-2_30deg_all.eps}  \caption{HCO$^+$ 3-2 {\bf Left:} Continuum subtracted integrated intensity map, {\bf Right:} Intensity weighted velocity map}
   \label{hco+_all}
 \end{figure*}
 
@@ -278,13 +279,27 @@ In all the simulations except HCO$^+$ we see molecular lines in absorption throu
 
 \section{ALMA Predictions} \label{sec:alma_predictions}
 
-In order to make predictions on the observability of the synthetic brightness maps created by LIME, CASA (common astronomy software applications) was used to simulate observing these with the completed ALMA in configuration 26 of 28 for a total time of six hours, giving a beam size of between 0.02 and 0.03 arcseconds. In order to clean the images which featured mainly absorption the sky model used was the output of the lime simulations with the continuum subtracted and then the image inverted. The simulated images were cleaned down to a 3$\sigma$level with $\sigma$given by the on-line ALMA sensitivity calculator (ref).
+In order to make predictions on the observability of the synthetic brightness maps CASA (common astronomy software applications) was used to simulate their observtion with the completed ALMA in configuration 26 of 28, giving a beam size of between 0.02 and 0.03 arcseconds. As the weakest lines studied in the model are of the order of 0.1-0.2$\,$mJy$\,$beam$^{-1}$ at this resolution, sensitivities of the order of 0.02$\,$mJy$\,$beam$^{-1}$ are required. This requires around 6 hours of integration time, the exact sensitivities are give in table \ref{sigmas}.
 
-Sensitivities:\newline
-C17O J=3$\rightarrow$2 at 337.06GHz $\sigma$=0.0270$\,$mJy$\,$beam$^{-1}$ \newline
-OCS J=26$\rightarrow$25 at 316.15GHz $\sigma$=0.0275$\,$mJy$\,$beam$^{-1}$ \newline
-HCO$^+$ J=3$\rightarrow$2 at 267.56GHz $\sigma$=0.0176$\,$mJy$\,$beam$^{-1}$ \newline
-H$_2$CO J=4$_{04}\rightarrow$3$_{03}$ at 290.62GHz $\sigma$=0.0228$\,$mJy$\,$beam$^{-1}$ \newline
+\begin{table}
+ \centering
+ \begin{minipage}{80mm}
+   \caption{Sensitivities of ALMA given 6 hours integration time. As calculated by the ALMA on-line sensitivity calculator.}
+   \label{sigmas}
+   \begin{tabular}{c||c|c|c}
+     \hline
+     Species & Transition & Frequency & Sensitivity\\
+     \hline
+     C$^{17}$O & J=3$\rightarrow$2 & 337.06GHz & 0.0270$\,$mJy$\,$beam$^{-1}$ \\
+     OCS & J=26$\rightarrow$25 & 316.15GHz & 0.0275$\,$mJy$\,$beam$^{-1}$ \\
+     HCO$^+$ & J=3$\rightarrow$2 & 267.56GHz & 0.0176$\,$mJy$\,$beam$^{-1}$ \\
+     H$_2$CO & 4$_{04}\rightarrow$3$_{03}$ & 290.62GHz & 0.0228$\,$mJy$\,$beam$^{-1}$ \\
+     \hline
+   \end{tabular}
+ \end{minipage}
+\end{table}
+
+ In order to clean the images which featured mainly absorption the sky model used was the output of the lime simulations with the continuum subtracted and then the image inverted. The simulated images were cleaned down to a 3$\sigma$level with $\sigma$ given in table \ref{sigmas}.
 
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/casa_cont_337GHz.eps}
@@ -323,7 +338,7 @@ H$_2$CO J=4$_{04}\rightarrow$3$_{03}$ at 290.62GHz $\sigma$=0.0228$\,$mJy$\,$bea
  \label{h2co_chanmap}
 \end{figure*}
 
-Figure \ref{h2co_chanmap} shows a channel map of the H$_2$CO 4$_{04}$-$3_{03}$ line overlaid on the 1$\,$mm continuum emission. From this it can be seen that the absorption features trace the disc spiral structure whilst line emission emanates from gaps in the disc where there is less continuum to be absorbed.{\bf not sure what else to say about channel map ask paola}
+Figure \ref{h2co_chanmap} shows a channel map of the H$_2$CO 4$_{04}$-$3_{03}$ line overlaid on the 1$\,$mm continuum emission. From this it can be seen that the absorption features trace the disc spiral structure whilst line emission emanates from gaps in the disc where there is less continuum to be absorbed.
 
 
 %\begin{figure}
@@ -339,7 +354,7 @@ Figure \ref{h2co_chanmap} shows a channel map of the H$_2$CO 4$_{04}$-$3_{03}$ l
 
 \begin{figure*}
  \includegraphics[width=168mm]{Figures/sim/casa_all_30deg_contSub.eps}
- \caption{Integrated intensity maps for the simulated observations of:{\bf Top Left:} H$_2$CO 4$_{04}\rightarrow$3$_{03}$, {\bf Top Right:}C$^{17}$O 3$\rightarrow$2, {\bf Bottom Left:} OCS 26$\rightarrow$25 and {\bf Bottom Right:} HCO$^+$ 3$\rightarrow$2. contours start at 3$\sigma$ and increasing in intervals of 3$\sigma$ for each of the maps except the H$_2$CO which starts at 5$\sigma$ and increases in intervals of 5$\sigma$.}
+ \caption{Integrated intensity maps for the simulated observations of:{\bf Top Left:} H$_2$CO 4$_{04}\rightarrow$3$_{03}$, {\bf Top Right:}C$^{17}$O 3$\rightarrow$2, {\bf Bottom Left:} OCS 26$\rightarrow$25 and {\bf Bottom Right:} HCO$^+$ 3$\rightarrow$2. contours start at 3$\sigma$ and increasing in intervals of 3$\sigma$ for each of the maps except the H$_2$CO which starts at 5$\sigma$ and increases in intervals of 5$\sigma$. Emission is in red contours, absorption in blue.}
 \label{mom0_maps}
 \end{figure*}
 
