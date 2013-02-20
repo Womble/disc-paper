@@ -1098,9 +1098,9 @@ $\reset@font\displaystyle##$\hfil\cr>\cr\approx\cr}}}
 
 \def\ps@myheadings{\let\@mkboth\@gobbletwo
  \def\@oddhead{\Large\hfill\it\rightmark\hspace{1.5em}\rm\@ddell\thepage}
- \def\@oddfoot{\small\copyright\ \@pubyear\ RAS, MNRAS {\bf \@volume}, \@pagerange\hfil}
+ \def\@oddfoot{\@pagerange\hfil}
  \def\@evenhead{\Large\@ddell\thepage\hspace{1.5em}\it\leftmark\hfill}
- \def\@evenfoot{\hfil\small\copyright\ \@pubyear\ RAS, MNRAS {\bf \@volume}, \@pagerange}
+ \def\@evenfoot{\@pagerange}
  \def\sectionmark##1{}
  \def\subsectionmark##1{}}
 
