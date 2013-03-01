@@ -163,7 +163,7 @@ To appropriately describe the environment within which a young protoplanetary di
 
 
 
-The pre-stellar core structure is maintained down to a radius of 80\,AU, within which the model of the young protoplanetary disc is used. The disc structure is derived by the hydrodynamic model of \citet{Boley2007} and  \citet{Boley2009}. The particular model considered here (as well as in I2011) is a 0.39$\,\rm{M}_\odot$ self-gravitating Keplerian disc (figure \ref{velocity}) featuring prominent spiral arms. H$_2$ number densities in the disc range from 10$^{4}$-10$^{13}\,\rm{cm}^{-3}$, and temperatures range from 30-400 K (figure \ref{rhoT}). The dust and gas temperatures in the disc are assumed to be in equilibrium. The underlying model is sampled as a regular grid of size 256$\times$256$\times$64 with spatial resolution of 0.5$\,$AU in x, y and z. The gas/dust mass ratio was assumed to be 1/100 throughout the disc and the envelope. The dust opacities were adopted from Ossenkopf and Henning (1994) and refer to dust grains with thick icy mantles and 10$^6$ yr coagulation history.\newline
+The pre-stellar core structure is maintained down to a radius of 80\,AU, within which the model of the young protoplanetary disc is used. The disc structure is derived by the hydrodynamic model of \citet{Boley2007} and  \citet{Boley2009}. The particular model considered here (as well as in I2011) is a 0.39$\,\rm{M}_\odot$ self-gravitating Keplerian disc (figure \ref{velocity}) featuring prominent spiral arms. H$_2$ number densities in the disc range from 10$^{4}$-10$^{13}\,\rm{cm}^{-3}$, and temperatures range from 30-400 K (figure \ref{rhoT}). The dust and gas temperatures in the disc are assumed to be in equilibrium. The underlying model is sampled as a regular grid of size 256$\times$256$\times$64 with spatial resolution of 0.5$\,$AU in x, y and z. The gas/dust mass ratio was assumed to be 1/100 throughout the disc and the envelope. The dust opacities were adopted from \citet{Ossenkopf1994} and refer to dust grains with thick icy mantles and 10$^6$ yr coagulation history.\newline
 
 \subsection{Chemical structure} \label{subsec:chemical_structure}
 Chemical abundances in the disc were taken from I2011 who followed gas-grain chemical processes during the dynamical evolution of the disc. The abundances of 125 species related by 1334 reactions were calculated through the time evolution of the disc. These abundances were interpolated onto a 51$^3$ grid covering the disc with cells of size 2.2$\times$2.2$\times$0.22$\,$AU$^2$.  From I2011 we selected the four species which appear to trace different regions of the disc: the inner 20\,AU (OCS), the inner 40\,AU (H$_2$CO),  the region between $\simeq$40 and 60\,AU (HCO$^+$) and one which traces the entirety of the disc (C$^{17}$O) (see figure \ref{Chemistry}). The abundance model used for C$^{17}$O was the CO model reduced by a factor of 1792, the ratio of $^{16}$O to $^{17}$O in the local ISM \citep{Wilson1994}. As explained by I2011,  H$_2$CO and OCS mostly probe the central warm regions, where icy mantles evaporate, whereas HCO$^+$ preferentially traces the outer spiral pattern as in the central region it is destroyed by water molecules and transformed into H$_3$O$^+$ and CO. The simple chemistry in the KC2010 model, adopted here as the envelope of the protoplanetary disc, does not provide detailed abundances of molecular species (besides CO and H$_2$O, see also \cite{Caselli2012}). As discussed in the result section \ref{sec:model_results}, approximations have been made based on values measured toward similar objects. The molecular data used is from the LAMDA (Leiden Atomic and Molecular DAtabase) database (Sch\"oier et al. 2005; http://home.strw.leidenuniv.nl/$\sim$moldata/).
@@ -228,7 +228,7 @@ In order to make predictions on the observability of the synthetic brightness ma
      C$^{17}$O & 3$\rightarrow$2 & 337.06GHz & 32.3$\,$K & 0.0270$\,$mJy$\,$beam$^{-1}$ \\
      OCS & 26$\rightarrow$25 & 316.15GHz & 25.7$\,$K & 0.0275$\,$mJy$\,$beam$^{-1}$ \\
      HCO$^+$ & 3$\rightarrow$2 & 267.56GHz & 205$\,$K & 0.0176$\,$mJy$\,$beam$^{-1}$ \\
-     H$_2$CO & 4$_{04}\rightarrow$3$_{03}$ & 34.9$\,$K & 290.62GHz & 0.0228$\,$mJy$\,$beam$^{-1}$ \\
+     H$_2$CO & 4$_{04}\rightarrow$3$_{03}$ &  290.62GHz & 34.9$\,$K & 0.0228$\,$mJy$\,$beam$^{-1}$ \\
      \hline
    \end{tabular}
  \end{minipage}
@@ -238,7 +238,7 @@ In order to clean the images, which featured mainly absorption, the sky model us
 \begin{figure}
  \includegraphics[width=84mm]{Figures/sim/casa_cont_300GHz_invert.eps}
 
- \caption{CASA simulation on the continuum emission of the model at 300GHz, using the same ALMA configuration as used for the molecular lines. The size of the beam at 300GHz is shown in the lower left corner.}
+ \caption{CASA simulation of the continuum emission of the model at 300GHz, using the same ALMA configuration as used for the molecular lines. The size of the beam at 300GHz is shown in the lower left corner.}
  \label{continuum}
 \end{figure}
 
